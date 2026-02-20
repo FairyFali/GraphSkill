@@ -1,1 +1,0 @@
-Imagine an airline route map where airports are connected by nonstop flights. Choose the smallest set of airports to upgrade with enhanced screening so that every nonstop flight either departs from or arrives at an upgraded airport. Return that minimal set of airports.

@@ -1,1 +1,0 @@
-Given an unweighted, undirected graph, determine how many isolated groups of vertices exist such that within each group any two vertices are reachable from one another via a path that stays inside the group.

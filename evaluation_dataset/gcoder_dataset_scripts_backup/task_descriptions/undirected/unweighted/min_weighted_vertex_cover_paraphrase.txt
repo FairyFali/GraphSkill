@@ -1,1 +1,0 @@
-Given an undirected, unweighted graph G, find a minimum vertex cover: the smallest set of vertices such that every edge has at least one endpoint in the set. Return this set.

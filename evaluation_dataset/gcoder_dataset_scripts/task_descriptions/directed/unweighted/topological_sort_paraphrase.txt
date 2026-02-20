@@ -1,1 +1,0 @@
-You are given a directed, unweighted graph via an edge list, where each pair (u, v) represents a directed edge from u to v. Determine a topological ordering of the nodes, if one exists, such that every node appears before all nodes it points to. Return the ordering as a list of nodes. If the graph is cyclic (so no topological order exists), return an empty list.

@@ -1,1 +1,0 @@
-Imagine a city map where intersections are connected by two-way streets, and all streets are treated equally (no distances or directions). Determine if you can plan a continuous walk that uses every street exactly once. This is possible only if the street network is connected and exactly zero or two intersections have an odd number of streets. Return a boolean value.

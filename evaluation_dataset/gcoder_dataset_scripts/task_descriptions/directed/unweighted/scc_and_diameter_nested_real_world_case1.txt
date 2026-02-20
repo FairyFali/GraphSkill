@@ -1,5 +1,0 @@
-Imagine an online social platform where users are nodes and “follow” actions are directed connections. You’re given a list of follows, where each entry is an ordered pair (u, v) meaning user u follows user v; the user set consists of all names that appear in these pairs, and repeated follows are treated as a single connection.
-
-Define a “mutual influence circle” as a largest possible group of users M such that, by following chains of follows, any user in M can reach any other and also be reached back (i.e., there are directed routes both ways between every pair in M). For each circle M, construct a collaboration view by ignoring direction within M: add an undirected tie {u, v} if either u follows v or v follows u and both endpoints are in M. Path length is measured by number of ties traversed. The “worst-case within-circle separation” is 0 when |M| ≤ 1; otherwise it is the maximum, over all user pairs in M, of the shortest number of ties needed to connect them in this undirected view.
-
-Compute this worst-case separation for every circle and return a list of these integers, one per circle, in the order the circles are identified.

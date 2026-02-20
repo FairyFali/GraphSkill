@@ -1,1 +1,0 @@
-Given an unweighted, directed graph G = (V, E), determine the greatest distance between any two vertices where distance is measured by the length (in edges) of a shortest path. In other words, compute the largest value among all pairwise shortest-path lengths to capture the graph’s overall extent.

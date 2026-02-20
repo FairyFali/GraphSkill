@@ -1,9 +1,0 @@
-{
-    "has_node": {"Input": "Graph: [[1, 2], [2, 3]] arg: 1", "Output": "True"},
-    "has_edge":  {"Input": "Graph: [[1, 2], [2, 3]] arg: (1, 3)", "Output": "False"},
-    "find_cycle": {"Input": "Graph: [[1, 2], [2, 3], [3, 1]]", "Output": "True"}, 
-    "number_of_edges": {"Input": "Graph: [[1, 2], [2, 3], [3, 1]]", "Output": "3"},
-    "number_of_nodes": {"Input": "Graph: [[1, 2], [2, 3], [3, 1]]", "Output": "3"},
-    "has_path": {"Input": "Graph: [[1, 2], [2, 3], [3, 1]] arg: [1,3]", "Output": "True"},
-    "degree": {"Input": "Graph: [[1, 2], [2, 3], [1, 3]] arg: 1", "Output": "2"}
-}

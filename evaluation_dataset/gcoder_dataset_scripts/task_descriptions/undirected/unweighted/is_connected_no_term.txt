@@ -1,1 +1,0 @@
-You are given an undirected, unweighted graph described by an edge list, where each edge is a pair (u, v) indicating a bidirectional link between u and v. Determine whether the graph forms a single connected component by verifying that every vertex is reachable from every other vertex. Return only a boolean value.

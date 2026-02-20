@@ -1,1 +1,0 @@
-Imagine a city map where intersections are locations and each pair of locations is connected by a two-way road labeled with its distance. Given a starting location and a destination, find the minimum total driving distance along these roads. You should only return the distance as a float.

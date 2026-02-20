@@ -1,5 +1,0 @@
- Consider a graph G =
- {V,E,c}, where c : E -> R+ is a function assigning a positive capacity to each edge, representing the maximum flow
- that the edge can support. Given a source node v_s and a sink
- node v_t in G, the task is to devise a plan to maximize the
- flow from the source𝑠 to the sink t.

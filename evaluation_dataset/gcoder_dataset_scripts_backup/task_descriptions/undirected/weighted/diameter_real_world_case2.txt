@@ -1,1 +1,0 @@
-In a computer or data-center network where each link’s weight represents typical round-trip latency, compute the network’s diameter—the largest, over all pairs of machines, of the minimum end-to-end latency—to assess worst-case communication delays and guide capacity planning, routing, and redundancy decisions.

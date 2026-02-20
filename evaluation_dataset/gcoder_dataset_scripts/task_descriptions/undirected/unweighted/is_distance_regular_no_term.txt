@@ -1,1 +1,0 @@
-You are given an undirected, unweighted graph described by an edge list, where each pair (u, v) denotes a two-way connection between u and v. Check whether, for every node, the counts of nodes at each shortest-path distance match those for every other node. Return a boolean value.

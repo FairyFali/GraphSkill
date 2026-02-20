@@ -1,1 +1,0 @@
-Real-world manufacturing task: A PCB drilling machine must drill one hole at each specified coordinate on a board. The time to reposition the drill between any two holes is known. Determine the drilling order that visits every hole exactly once and returns to the starting position while minimizing total repositioning time.

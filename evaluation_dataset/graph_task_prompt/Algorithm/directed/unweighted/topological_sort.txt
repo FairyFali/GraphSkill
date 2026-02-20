@@ -1,9 +1,0 @@
-Kahn's Algorithm; The idea is to repeatedly select nodes with in degree zero, append them to the topological ordering, remove their outgoing edges, and decrease the in degree of their neighbors. If all nodes are processed this way, the graph is a DAG and the ordering is valid. If at some point no node has in degree zero while unprocessed nodes remain, the graph contains a cycle and no topological ordering exists.
-
-Example 1: A simple DAG
-Graph: nodes {A, B, C}, edges: (A, B), (B, C)
-Step 1: Compute in degrees. A has in degree 0, B has in degree 1, C has in degree 1.
-Step 2: Start with nodes of in degree 0. Add A to the ordering. Remove edge (A, B). Now B has in degree 0.
-Step 3: Add B to the ordering. Remove edge (B, C). Now C has in degree 0.
-Step 4: Add C to the ordering. All nodes processed.
-Final ordering: A, B, C.

@@ -1,1 +1,0 @@
-Given an undirected graph whose edges have weights, find and return the number of all of its connected components. A connected component is a maximal subset of vertices where every pair of vertices in the subset can reach each other via paths that stay within the subset.

@@ -1,1 +1,0 @@
-You are given an undirected, weighted graph described by an edge list, where each edge is a tuple (u, v, w) representing a two-way connection between nodes u and v with weight w. For two nodes, source and target, compute the minimum-cost route between them—the path with the smallest sum of edge weights. Return only the total cost as a float.

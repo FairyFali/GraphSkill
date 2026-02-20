@@ -1,8 +1,0 @@
-Degree and connectivity checks; The idea is to test whether an Euler path exists by performing two checks: first, the graph must be connected when ignoring isolated vertices; second, the number of vertices with odd degree must be either zero or two. If both conditions hold, the graph has an Euler path; otherwise, it does not.
-
-Example 1: A simple path that has an Euler path
-Graph: nodes {1, 2, 3}, edges: (1,2), (2,3)
-Step 1: Compute degrees. Node 1 has degree 1, node 2 has degree 2, node 3 has degree 1.
-Step 2: Count vertices with odd degree. Vertices 1 and 3 have odd degree, giving exactly two odd vertices.
-Step 3: Check connectivity. All nodes with edges are reachable in a single connected component.
-Conclusion: Conditions are satisfied, so an Euler path exists.

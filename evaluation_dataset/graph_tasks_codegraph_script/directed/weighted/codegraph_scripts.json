@@ -1,4 +1,0 @@
-{
-    "maximum_flow": "import networkx as nx\nG = nx.DiGraph()\nG.add_edge(\"x\", \"a\", capacity=3.0)\nG.add_edge(\"x\", \"b\", capacity=1.0)\nG.add_edge(\"a\", \"c\", capacity=3.0)\nG.add_edge(\"b\", \"c\", capacity=5.0)\nG.add_edge(\"b\", \"d\", capacity=4.0)\nG.add_edge(\"d\", \"e\", capacity=2.0)\nG.add_edge(\"c\", \"y\", capacity=2.0)\nG.add_edge(\"e\", \"y\", capacity=3.0)\nflow_value, flow_dict = nx.maximum_flow(G, \"x\", \"y\")",
-    "traveling_salesman_problem": "import networkx as nx\ntsp = nx.approximation.traveling_salesman_problem\nG = nx.cycle_graph(9)\nG[4][5][\"weight\"] = 5  # all other weights are 1\ntsp(G, nodes=[3, 6])"
-}

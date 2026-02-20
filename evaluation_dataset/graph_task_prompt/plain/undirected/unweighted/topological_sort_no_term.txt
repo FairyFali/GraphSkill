@@ -1,1 +1,0 @@
-Given a graph G = (V, E), produce a linear arrangement of all vertices v1, v2, …, vn such that for every directed edge (u, v) in E, u appears earlier in the sequence than v. Such an arrangement exists only if G is a directed acyclic graph (no cycles). Formally, for each (u, v) ∈ E, if u is at position i and v at position j, then i < j.

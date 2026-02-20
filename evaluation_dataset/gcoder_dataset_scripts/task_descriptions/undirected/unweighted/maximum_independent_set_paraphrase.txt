@@ -1,1 +1,0 @@
-You are given an unweighted, undirected graph as an edge list, where each pair (u, v) denotes a two-way connection between u and v. Task: find the size of a maximum independent set (the largest set of vertices with no edges between any two of them). Return only the size as an int.

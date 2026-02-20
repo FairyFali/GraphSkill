@@ -1,2 +1,0 @@
-- Building layout/evacuation planning: Model rooms as nodes and doorways as one-way, equal-effort connections. Find the largest minimum number of doors one must pass through between any two rooms to assess worst-case evacuation distance.
-

@@ -1,1 +1,0 @@
-Imagine a social network where each pair of people is either mutual friends or not. Determine whether this friendship network has a perfectly uniform reach: for any two people, the number of others at exactly 1 friendship step away, 2 steps away, 3 steps away, etc., is identical. Return a boolean value.

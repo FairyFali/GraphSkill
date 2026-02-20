@@ -1,3 +1,0 @@
-Given an unweighted undirected graph G and two nodes s and t, compute one shortest path P from s to t. 
-For every node v on P, compute its local clustering coefficient. Return the node on this shortest path that has the highest clustering coefficient, 
-breaking ties by choosing the node that appears closer to s along the path. Return the path and the clustering coefficients on the path.

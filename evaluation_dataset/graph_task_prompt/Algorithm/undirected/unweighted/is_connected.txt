@@ -1,9 +1,0 @@
-Breadth First Search (BFS) reachability; The idea is to start from an arbitrary node, explore the graph using BFS to visit all vertices that are reachable from this starting node, and then check whether every vertex in the graph has been visited. If all vertices are visited from the starting node, the graph is connected; if some vertices remain unvisited, the graph is not connected.
-
-Example 1: A simple connected chain
-Graph: nodes {1, 2, 3, 4}, edges: (1,2), (2,3), (3,4)
-Step 1: Choose a starting node, for example node 1. Mark it as visited and place it in the BFS queue.
-Step 2: Dequeue 1, visit its neighbor 2, mark 2 as visited, and add 2 to the queue.
-Step 3: Dequeue 2, visit its neighbor 3 (1 is already visited), mark 3 as visited, and add 3 to the queue.
-Step 4: Dequeue 3, visit its neighbor 4, mark 4 as visited, and add 4 to the queue.
-Step 5: Dequeue 4, its only neighbor 3 is already visited. The queue is now empty, and all nodes {1,2,3,4} are marked visited, so the graph is connected.

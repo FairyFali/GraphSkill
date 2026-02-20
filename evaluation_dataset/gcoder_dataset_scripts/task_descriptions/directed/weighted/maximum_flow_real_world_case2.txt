@@ -1,1 +1,0 @@
-Imagine an air cargo network with one-way flight routes between airports, where each route has a maximum daily tonnage capacity. Given this network, a primary origin airport, and a destination airport, determine the greatest total cargo that can be moved per day from origin to destination. Return only the maximum flow value as  float.

@@ -1,1 +1,0 @@
-Given a building floor plan where rooms are nodes and doorways are two-way connections, determine whether the interior is fully navigable—i.e., from any room you can reach every other room without leaving the building (no isolated sections).

@@ -1,1 +1,0 @@
-You are given an unweighted, undirected graph specified by an edge list, where each edge (u, v) denotes a two-way connection between nodes u and v. Determine the number of connected components in the graph. A connected component is a largest subset of nodes in which every pair is reachable via some path. Return the count as an integer.

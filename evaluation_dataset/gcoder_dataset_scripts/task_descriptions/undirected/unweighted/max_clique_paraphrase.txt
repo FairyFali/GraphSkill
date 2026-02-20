@@ -1,1 +1,0 @@
-You are given an undirected, unweighted graph described by an edge list, where each edge (u, v) represents a bidirectional link between nodes u and v. Find a maximum clique: the largest subset of vertices in which every pair of vertices is connected by an edge. Output any one such maximum clique as a list of node identifiers.

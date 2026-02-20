@@ -1,6 +1,0 @@
-The task requires identifying the shortest
- path between two nodes in a directed graph
- G ={V,E,w}, where w : E -> R+ assigns a positive weight
- to each edge. The goal is to find a path connecting the two
- nodes such that the total sum of the edge weights along this
- path is minimized. 

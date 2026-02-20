@@ -1,5 +1,0 @@
-You are given an undirected, unweighted graph via an edge list and two distinguished vertices s and t. The task is to find the vertices lying on some shortest s–t path that have the highest local clustering, breaking ties by closeness to s.
-
-A shortest s–t path is any path with the minimum number of edges among all s–t paths. Let V_{s,t} be the set of all vertices that appear on at least one such shortest path. For any vertex v, let Γ(v) be its neighbor set, k_v = |Γ(v)|, and let E_v be the number of edges with both endpoints in Γ(v). Define the local clustering coefficient C(v) as 0 if k_v < 2; otherwise C(v) = 2*E_v / (k_v*(k_v−1)). Let C_max = max_{v in V_{s,t}} C(v), and define B = { v in V_{s,t} | C(v) = C_max }. Let d(s, v) be the length (in edges) of a shortest path from s to v.
-
-Return the vertices in B sorted by increasing d(s, v). If there is no path from s to t, return null.

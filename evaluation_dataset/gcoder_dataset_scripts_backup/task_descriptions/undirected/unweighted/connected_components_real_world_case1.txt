@@ -1,1 +1,0 @@
-Given a real-world network (e.g., users connected by friendships, devices with direct links, or towns connected by roads) modeled as an undirected, unweighted graph, determine how many isolated clusters exist—groups in which every node can reach every other via some chain of connections, with no links to nodes outside the group. Return the count of these clusters.

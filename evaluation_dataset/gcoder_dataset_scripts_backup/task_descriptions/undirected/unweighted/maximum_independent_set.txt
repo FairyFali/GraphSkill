@@ -1,2 +1,0 @@
-Given an undirected graph G with no weights on the edges, return the size of maximum independent set on the
-graph. An independent set X on the graph is defined as a set of vertices such that no two vertices u, v in X are adjacent.

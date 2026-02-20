@@ -1,1 +1,0 @@
-Imagine an archipelago where islands are connected by two-way bridges, and each bridge counts as one crossing. For every pair of islands, determine the fewest number of bridges needed to travel between them, then return the largest such number (the system’s longest shortest route) as  int.

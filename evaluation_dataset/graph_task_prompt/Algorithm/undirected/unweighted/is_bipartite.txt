@@ -1,9 +1,0 @@
-Breadth-First Search (BFS) 2-coloring; We try to color the graph with two colors so that no edge connects nodes of the same color: pick an uncolored node, assign it a color (like Color A), put it in a queue, then repeatedly take a node from the queue and give all its uncolored neighbors the opposite color (Color B); if we ever find an edge whose endpoints already have the same color, the graph is not bipartite; if we finish without conflicts (including all disconnected components), the graph is bipartite.
-
-Example 1: A simple path that is bipartite
-Graph: nodes {1, 2, 3, 4}, edges: (1,2), (2,3), (3,4)
-Step 1: Pick node 1, color it Color A. Put 1 in the queue.
-Step 2: Take 1 from the queue. Its neighbor is 2. Node 2 is uncolored, so color 2 with Color B and add 2 to the queue.
-Step 3: Take 2 from the queue. Its neighbors are 1 and 3. Node 1 already has Color A and 2 has Color B, so that is fine. Node 3 is uncolored, so color 3 with Color A and add 3 to the queue.
-Step 4: Take 3 from the queue. Its neighbors are 2 and 4. Node 2 already has Color B, which is different from Color A on 3, so that is fine. Node 4 is uncolored, so color 4 with Color B and add 4 to the queue.
-Step 5: Take 4 from the queue. Its only neighbor is 3, which already has Color A, different from Color B on 4, so that is fine. The queue is now empty, and all nodes are colored with no conflicts, so this graph is bipartite.

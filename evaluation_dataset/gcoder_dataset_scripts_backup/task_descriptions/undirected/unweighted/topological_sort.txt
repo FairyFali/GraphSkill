@@ -1,4 +1,0 @@
-In a graph ( G = {V, E} ), the task is to determine a **topological ordering** of its vertices.
-A **topological order** is a linear sequence of all vertices ( v_1, v_2, \ldots, v_n ) such that for every directed edge ( (u, v) \in E ), vertex ( u ) appears **before** vertex ( v ) in the sequence.
-This ordering is only possible if ( G ) is a **Directed Acyclic Graph (DAG)**, meaning it contains **no cycles**.
-Formally, for all ( (u, v) \in E ), if ( v_i = u ) and ( v_j = v ), then ( i < j ).

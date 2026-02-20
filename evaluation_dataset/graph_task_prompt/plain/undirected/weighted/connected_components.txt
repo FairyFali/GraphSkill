@@ -1,3 +1,0 @@
-Given an undirected graph G with weights on the edges, return the connected components in the graph.
-A connected component X in an undirected graph is defined as a set of nodes such that any two nodes in X are connected
-by a path within X.

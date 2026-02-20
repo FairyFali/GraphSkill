@@ -1,1 +1,0 @@
-Given a weighted directed graph G = (V, E, w) with w: E → R+ assigning positive costs to edges, determine a path between two specified vertices whose total edge weight is minimal among all possible connecting paths.

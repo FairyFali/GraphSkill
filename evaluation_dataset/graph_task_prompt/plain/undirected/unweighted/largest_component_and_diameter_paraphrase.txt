@@ -1,1 +1,0 @@
-Given an unweighted undirected graph G, first check whether it is connected. If it is connected, return its diameter. If it is not connected, identify the largest connected component by number of nodes, compute the diameter of that component only, and return that value.

@@ -1,1 +1,0 @@
-Imagine an airline route map where each direct flight is a one-way link with no weights (just the existence of a route). Determine whether every airport has the same total number of connections, counting both incoming and outgoing routes. Return a boolean: true if the network is regular, false otherwise.

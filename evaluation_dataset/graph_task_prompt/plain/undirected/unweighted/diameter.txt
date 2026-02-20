@@ -1,4 +1,0 @@
- In a graph G = {V,E},the diameter
- is the longest shortest path between any two nodes. The
- task is to compute this maximum distance to understand the
- graph's extent.

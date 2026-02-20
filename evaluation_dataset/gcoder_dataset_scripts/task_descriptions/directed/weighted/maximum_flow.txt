@@ -1,1 +1,0 @@
-You are given a directed, weighted graph represented by an edge list, where each edge is a triplet (u, v, c) indicating a directed connection from u to v with positive capacity c. Compute the maximum flow from _snode to _tnode. The maximum flow problem seeks the largest feasible flow from a source to a sink under capacity constraints. Return only the flow value as a float.

@@ -1,1 +1,0 @@
-Imagine a network of webpages where each page can link to other pages via one-way hyperlinks, and we ignore any notion of link strength or cost. Determine how many distinct clusters of pages exist such that from any page within a cluster you can navigate to every other page in that cluster (and return) by following the available hyperlinks. Return only the count as  integer.

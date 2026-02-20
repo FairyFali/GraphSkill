@@ -1,1 +1,0 @@
- This task is to determine if a graph G = {V,E} is bipartite. A graph is considered bipartite if its nodes can be split into two distinct sets U and V such that no two nodes within the same set are adjacent. 

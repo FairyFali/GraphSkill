@@ -1,1 +1,0 @@
-Let's construct a graph with the nodes and edges first. 

@@ -1,1 +1,0 @@
-Given a complete weighted directed graph G, find the minimum-total-weight Hamiltonian cycle: a tour that starts at a node, visits every node exactly once, and returns to the start.

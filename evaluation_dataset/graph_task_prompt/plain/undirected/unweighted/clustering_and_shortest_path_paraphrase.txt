@@ -1,4 +1,0 @@
-Given an undirected graph G and an integer k, identify the top-k bridge hubs. 
-A bridge hub is a node with a high bridge-hub score S(v) = (1 - C(v)) / d̄(v), where C(v) is the local clustering coefficient 
-and d̄(v) is the average shortest-path distance from v to all other nodes. 
-Return the top-k nodes with their scores in descending order.

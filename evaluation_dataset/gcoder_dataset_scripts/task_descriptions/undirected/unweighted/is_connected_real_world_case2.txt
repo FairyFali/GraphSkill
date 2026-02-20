@@ -1,1 +1,0 @@
-Given a social network where friendships are mutual (connections go both ways) and no relationship strengths are considered, determine whether the community is fully connected—i.e., from any member you can reach every other member via chains of mutual friends. Return only a boolean value.

@@ -1,3 +1,0 @@
-Given an undirected complete graph G where every pair of nodes is connected by an edge, and each edge has a weight,
-calculate the Traveling Salesman Problem (TSP) on the graph, which is the shortest cycle that visits each node exactly
-once and returns to the starting node.

@@ -1,1 +1,0 @@
-Given a weighted, undirected graph G and two vertices u and v, determine the nodes that are directly connected to both u and v (the intersection of their neighbor sets). The Python function will receive G, u, and v as inputs.

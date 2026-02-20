@@ -1,1 +1,0 @@
-In a social app where relationships are one-way “follows” (user A follows user B), decide whether all users can be divided into two non-overlapping groups so that no user follows someone within the same group. Return a boolean (true if such a split is possible, false otherwise).

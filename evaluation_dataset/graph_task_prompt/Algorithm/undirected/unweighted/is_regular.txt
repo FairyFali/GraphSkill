@@ -1,8 +1,0 @@
-Degree comparison; The idea is to compute the degree of every vertex in the graph, record the degree of the first vertex, and then check whether all other vertices share the same degree. If every vertex has the same degree value, the graph is regular; if any vertex differs, the graph is not regular.
-
-Example 1: A regular graph
-Graph: nodes {A, B, C, D}, edges: (A,B), (B,C), (C,D), (D,A)
-Step 1: Compute degrees. A has degree 2, B has degree 2, C has degree 2, D has degree 2.
-Step 2: Record degree of the first vertex, which is 2.
-Step 3: Check all vertices. All degrees match 2.
-Conclusion: All vertices share the same degree, so the graph is regular.

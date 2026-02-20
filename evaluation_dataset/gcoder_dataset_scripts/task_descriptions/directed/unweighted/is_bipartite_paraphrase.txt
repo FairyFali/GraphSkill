@@ -1,1 +1,0 @@
-You are given an unweighted, undirected graph described by an edge list, where each edge (u, v) represents a two-way connection between nodes u and v. Determine if the graph is bipartite and return a boolean result.

@@ -1,1 +1,0 @@
-Given a map of cities (nodes) and two-way roads between them (edges), determine whether the transportation network is fully connected—that is, whether there is a route between every pair of cities (no isolated regions).

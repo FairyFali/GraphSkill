@@ -1,1 +1,0 @@
-Given a simple undirected graph without edge weights and two vertices u and v, compute the set of nodes that are adjacent to both u and v (i.e., the intersection of their neighbor sets).

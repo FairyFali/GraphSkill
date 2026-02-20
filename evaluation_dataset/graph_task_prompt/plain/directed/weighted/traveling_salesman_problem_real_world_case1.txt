@@ -1,1 +1,0 @@
-Given a set of locations (e.g., cities, customers) and a matrix of one-way travel costs or times between every pair of locations, plan the shortest round-trip route that starts at a chosen depot, visits each location exactly once, and returns to the depot.

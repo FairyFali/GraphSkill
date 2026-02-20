@@ -1,1 +1,0 @@
-Imagine a catalog of smart-home devices where each device is a node and an undirected edge connects two devices if they’re certified to work directly with each other. Find the largest group of devices in which every pair is mutually compatible. Return that set of devices (the maximum clique).

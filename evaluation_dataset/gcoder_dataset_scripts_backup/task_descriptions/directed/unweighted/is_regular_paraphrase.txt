@@ -1,1 +1,0 @@
-Given an directed, unweighted graph G(V, E), determine whether it is a regular graph by checking if every vertex has the same degree (the same number of incident edges).

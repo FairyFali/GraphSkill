@@ -1,1 +1,0 @@
-Given a undirected network G=(V,E) with a positive capacity c(e) on each edge, and designated source s and sink t, find how to route flow so that the total sent from s to t is maximized, subject to edge capacity limits and flow conservation at all intermediate nodes.

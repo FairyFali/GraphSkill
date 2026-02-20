@@ -1,1 +1,0 @@
-Model a social network as an undirected, weighted graph where nodes are users and edge weights reflect interaction strength. Given two users u and v, return their mutual contacts—the set of users connected to both u and v (i.e., the intersection of their neighbors).

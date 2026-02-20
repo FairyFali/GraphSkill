@@ -1,5 +1,0 @@
-Imagine a flight network where each node is an airport and an undirected edge indicates a regular bidirectional route; you’re given this route list and an integer k. The aim is to find airports that act as strong transfer gateways between otherwise separate route clusters.
-
-For each airport v, let Γ(v) be the set of airports directly connected to v and k_v = |Γ(v)|. Define the local neighborhood interconnection (local clustering coefficient) as C(v) = 2E_v / (k_v (k_v − 1)) if k_v ≥ 2 and 0 otherwise, where E_v counts the number of routes whose endpoints are both in Γ(v). Let d(v, u) be the number of flight hops (unweighted shortest-path distance) from v to any reachable airport u ≠ v, and let d̄(v) be the average of d(v, u) over all such reachable airports; if no such airports exist (v is isolated), set d̄(v) = ∞. Define the gateway score as S(v) = (1 − C(v)) / d̄(v), with S(v) = 0 when d̄(v) is ∞ or 0. If multiple airports share the same score, break ties by airport identifier in ascending order.
-
-Return the top k airports with the highest gateway scores, in descending order of score, breaking ties by airport identifier, and include each airport’s score.

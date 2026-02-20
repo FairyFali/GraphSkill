@@ -1,4 +1,0 @@
-In a graph G = {V,E},
- a regular graph is one where each vertex has the same degree.
- The task is to verify if G is regular by checking if all vertices
- have identical degrees.

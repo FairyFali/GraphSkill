@@ -1,1 +1,0 @@
-You are given an undirected, unweighted graph represented by an edge list, where each edge is a pair of nodes (u, v) indicating a bidirectional connection between u and v. Determine whether the graph is bipartite, meaning its nodes can be partitioned into two disjoint sets such that no edge connects two nodes within the same set. Return a boolean value.

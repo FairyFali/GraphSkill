@@ -1,1 +1,0 @@
-Given an unweighted, undirected graph G = (V, E), determine whether the graph is regular by checking if every vertex has the same degree; output true if all degrees match, otherwise false.

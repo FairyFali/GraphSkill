@@ -1,1 +1,0 @@
-Imagine a social network where each connection represents a mutual friendship (friendships are two-way and there’s no strength/weight—either friends or not). Find the largest group of users such that every pair within the group are mutual friends. Return the user IDs as  List[Int].

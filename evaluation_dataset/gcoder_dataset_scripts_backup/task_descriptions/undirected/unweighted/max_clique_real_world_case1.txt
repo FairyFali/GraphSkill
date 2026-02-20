@@ -1,1 +1,0 @@
-Given a social network where each node is a person and an undirected edge means two people know each other, find the largest group in which everyone knows everyone else. Return the set of people in that group (the maximum clique).

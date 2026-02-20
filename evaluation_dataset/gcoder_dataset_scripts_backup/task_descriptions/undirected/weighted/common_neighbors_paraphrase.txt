@@ -1,1 +1,0 @@
-Rephrase: For a weighted, undirected graph G, write Python that, given two nodes u and v, computes the set of their common neighbors—the nodes that are adjacent to both u and v.

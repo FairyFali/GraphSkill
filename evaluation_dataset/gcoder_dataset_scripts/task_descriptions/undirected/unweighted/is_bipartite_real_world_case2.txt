@@ -1,1 +1,0 @@
-You’re arranging a neighborhood event with two separate rooms. You’re given a list of guests and pairs of guests who can’t be in the same room (each disagreement is mutual and has no intensity level). Determine if you can assign everyone to one of the two rooms so that no incompatible pair ends up together. Return a boolean.

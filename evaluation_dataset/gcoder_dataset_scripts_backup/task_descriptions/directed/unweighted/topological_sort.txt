@@ -1,1 +1,0 @@
-This task is to compute a topological ordering of a directed graph G = {V, E}. A topological sort is a valid linear arrangement of all nodes such that for every directed edge ((u, v) \in E), the node (u) appears before (v) in the ordering. This ordering exists only when the graph contains no directed cycles, meaning the graph must be a directed acyclic graph (DAG).

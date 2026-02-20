@@ -1,1 +1,0 @@
-You are given a directed, capacitated graph described by an edge list. Each edge is a tuple (u, v, c) representing a directed edge from u to v with positive capacity c. Compute the maximum flow from _snode to _tnode. The maximum flow is the greatest feasible amount of flow from source to sink under capacity constraints. Return only the flow value as a float.

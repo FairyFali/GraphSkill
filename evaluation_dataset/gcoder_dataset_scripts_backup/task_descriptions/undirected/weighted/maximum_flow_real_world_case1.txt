@@ -1,1 +1,0 @@
-You’re managing a distribution network where each road, rail line, or shipping lane is two-way and has a maximum throughput (units per hour). Given a main supplier (source) and a target market hub (sink), decide how to route shipments through the network so that the total amount delivered to the hub per unit time is as large as possible, without exceeding any link’s capacity.

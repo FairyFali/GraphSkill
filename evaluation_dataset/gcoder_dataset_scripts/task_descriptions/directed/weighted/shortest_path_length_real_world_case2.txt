@@ -1,1 +1,0 @@
-Imagine routing a data packet through a network where some links carry traffic only in one direction and each connection has a latency. Compute the minimum end-to-end latency from a given source server to a destination server and return only that latency as  float.

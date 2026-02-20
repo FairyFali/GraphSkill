@@ -1,1 +1,0 @@
-Determine if a network has uniform connectivity: given an undirected network (e.g., devices, sensors, or people), check whether every node has the same number of connections. If all nodes share the same degree, the network is regular; otherwise, flag nodes that deviate.

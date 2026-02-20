@@ -1,1 +1,0 @@
-In a social network where friendships are mutual and there’s no notion of connection strength, given two user IDs u and v, find all the people who are friends with both of them and return their user IDs as a List[Int].

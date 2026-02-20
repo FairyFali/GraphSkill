@@ -1,5 +1,0 @@
- In a graph
- G ={V,E}, adistance-regular graph has the same number
- of vertices at each distance for any pair of vertices. The task
- is to determine if G is distance-regular by verifying this
- property for all vertex pairs.

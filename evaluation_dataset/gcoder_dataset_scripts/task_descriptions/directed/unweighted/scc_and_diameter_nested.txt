@@ -1,5 +1,0 @@
-Compute, for each strongly connected component of a directed graph, the diameter of the undirected graph obtained by ignoring edge directions within that component. The goal is to produce one integer per component representing this diameter.
-
-The input scc_and_diameter_nested is a list of directed edges, where each edge is an ordered pair (u, v) indicating a directed edge from u to v; the vertex set consists of all nodes that appear in these pairs, and repeated edges are treated as a single connection. A strongly connected component is a maximal set of vertices C such that for every u, v in C there exists a directed path from u to v and from v to u. For each component C, construct an undirected graph H_C with vertex set C and an undirected edge {u, v} if either (u, v) or (v, u) appears among edges with both endpoints in C; path lengths are measured in number of edges; the diameter of C is 0 when |C| ≤ 1, otherwise it is the maximum, over all pairs in C, of the shortest-path length between them in H_C. 
-
-Return a list of integers giving these diameters, one per strongly connected component, in the order induced by the component enumeration.

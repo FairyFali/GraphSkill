@@ -1,1 +1,0 @@
-Sports league fairness check: Given a season’s matchup list where each game links two teams, verify that every team has played the same number of games. If all teams have identical game counts, the schedule is balanced; otherwise, flag teams with more or fewer games than the rest.

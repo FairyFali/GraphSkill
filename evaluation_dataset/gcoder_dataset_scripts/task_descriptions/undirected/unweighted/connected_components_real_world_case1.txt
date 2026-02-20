@@ -1,1 +1,0 @@
-Imagine a social network where each person is a node and there’s a link between two people if they are mutual friends (friendships are reciprocal and have no strength levels). Determine how many separate friend circles exist—each circle being the largest group in which any two people are connected through a chain of friends-of-friends. Return the count as  integer.

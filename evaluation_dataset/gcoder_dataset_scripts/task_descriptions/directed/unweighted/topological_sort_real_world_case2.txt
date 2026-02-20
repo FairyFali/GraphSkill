@@ -1,1 +1,0 @@
-Given a collection of software packages and their dependency links (an arrow from Package A to Package B means A must be installed before B, with no weights or priorities on the links), compute an installation sequence so that each package appears before any package that depends on it. Return the ordering as a list of nodes.

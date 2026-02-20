@@ -1,1 +1,0 @@
-Imagine a city’s road network where streets are two-way and each street has a weight like average travel time; for a selected intersection, compute the clustering coefficient that indicates how tightly its neighboring intersections are connected to each other. You should only return the coefficient value as  float type.

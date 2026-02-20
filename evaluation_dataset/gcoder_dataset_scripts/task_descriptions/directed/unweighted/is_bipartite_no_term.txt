@@ -1,1 +1,0 @@
-You are given an undirected, unweighted graph represented by an edge list, where each edge is a pair (u, v) indicating a bidirectional link between u and v. Determine whether the vertices can be split into two disjoint sets so that no edge connects nodes within the same set; return a boolean value.

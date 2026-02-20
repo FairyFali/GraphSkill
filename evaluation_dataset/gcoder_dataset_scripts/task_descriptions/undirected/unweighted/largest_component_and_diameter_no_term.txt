@@ -1,5 +1,0 @@
-You are given an undirected, unweighted graph as an edge list, where each edge is a pair of nodes indicating a two-way link. The goal is to compute the graph’s effective farthest-pair shortest-path length.
-
-The node set is all unique endpoints appearing in the edge list. A “piece” of the graph is a maximal set of nodes in which every pair of nodes is joined by some path of edges. The shortest-path distance between two nodes is the minimum number of edges on any path connecting them within the same piece. For any graph that forms a single piece, its farthest-pair shortest-path length is the greatest such distance over all node pairs if it has at least two nodes, and 0 if it has exactly one node. The effective value for the input graph G is defined as follows: if G forms a single piece, use that value for G; otherwise, pick any piece with the largest number of nodes (ties broken arbitrarily) and use its value. If the graph has no nodes, return no value.
-
-Return this effective farthest-pair distance as a nonnegative integer, or return no value if the graph has no nodes.

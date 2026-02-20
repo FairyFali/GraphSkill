@@ -1,1 +1,0 @@
-Imagine an email communication network where each person is a node, and each edge goes from the sender to the recipient and carries a weight equal to the number of emails sent. Given a specific person, compute that person’s clustering coefficient—how strongly their contacts also email each other. You should only return the coefficient value as  float type.

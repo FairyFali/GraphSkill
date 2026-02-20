@@ -1,1 +1,0 @@
-You are given a directed, unweighted graph via an edge list, where each pair (u, v) represents a directed edge from u to v. Implement a function diameter() with no parameters that returns an int representing the graph’s diameter, defined as the greatest shortest-path length between any pair of nodes. Return the diameter as an int.

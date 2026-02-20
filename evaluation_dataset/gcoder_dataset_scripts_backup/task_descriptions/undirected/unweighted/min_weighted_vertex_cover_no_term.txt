@@ -1,1 +1,0 @@
-Given an undirected graph with no edge weights, find a smallest vertex set that touches every edge (each edge has at least one endpoint in the set). Return this minimum-size vertex cover.

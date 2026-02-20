@@ -1,9 +1,0 @@
-- Building layout/evacuation planning: Model rooms as nodes and doorways as two-way, equal-effort connections. Find the largest minimum number of doors one must pass through between any two rooms to assess worst-case evacuation distance.
-
-- Airline route map (equal-leg assumption): With airports connected by bidirectional routes treated as equal hops, compute the maximum minimum number of flights needed between the two most separated airports to gauge route depth.
-
-- Pipeline inspection network: Treat junctions as nodes and pipe segments as two-way, equal-length links. Determine the largest minimum number of segments between any two junctions to plan worst-case inspection path length.
-
-- Public park trail system: Intersections are nodes and trails are bidirectional, equal-effort edges. Find the largest shortest number of trail segments between two intersections to understand the park’s maximum traversal span.
-
-- Museum/gallery rooms: Galleries connected by doorways of equal effort; compute the maximum of all shortest door-to-door counts between any two galleries to estimate visitor wayfinding complexity.

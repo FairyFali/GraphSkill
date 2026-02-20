@@ -1,4 +1,0 @@
-This task is to determine whether there is a
- Hamilton path in a graph G = {V,E}. A Hamilton
- path is defined as a path that traverses each node in the
- graph exactly once.

@@ -1,1 +1,0 @@
-Given an unweighted directed graph G, find a minimum vertex cover: the smallest set of vertices such that every directed edge (u, v) has at least one endpoint (u or v) included in the set.

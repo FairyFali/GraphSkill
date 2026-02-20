@@ -1,1 +1,0 @@
-Given an unweighted, undirected graph G = (V, E), compute the clustering coefficient for a node v, which quantifies how tightly v’s neighbors are interconnected—that is, the fraction of possible edges between v’s neighbors that actually exist.

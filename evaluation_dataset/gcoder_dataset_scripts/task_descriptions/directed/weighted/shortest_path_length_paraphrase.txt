@@ -1,1 +1,0 @@
-You are given a weighted, directed graph in edge-list form, where each entry (u, v, w) denotes an edge from u to v with weight w. For a specified source node and target node, compute a shortest path between them. The shortest path is the path with the minimum total sum of edge weights. Output only the path length as a floating-point value.

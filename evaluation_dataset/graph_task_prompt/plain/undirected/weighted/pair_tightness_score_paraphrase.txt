@@ -1,5 +1,0 @@
-Given a weighted undirected graph G and two nodes s and t, compute in parallel: 
-(1) the weighted shortest-path distance -- d(s,t), 
-(2) the number of common neighbors of s and t -- N_common, 
-and (3) the local clustering coefficients of s and t -- C(s) and C(t). 
-Then define the pair tightness score T(s,t) = (|N_common| + (C(s) + C(t))/2) / (1 + d(s,t)). Return T(s,t).

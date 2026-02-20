@@ -1,1 +1,0 @@
-Given an unweighted directed graph G = (V, E), find the largest maximal subgraph in which every pair of vertices is mutually reachable via directed paths, and return the number of these subgraphs.

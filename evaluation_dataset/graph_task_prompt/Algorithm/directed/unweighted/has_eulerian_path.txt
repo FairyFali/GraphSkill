@@ -1,8 +1,0 @@
-Hierholzer's Algorithm; The idea is to check whether the graph has an Euler path by verifying two conditions: first, the graph must be connected when ignoring isolated nodes; second, the number of vertices with odd degree must be either zero or two. If both conditions hold, an Euler path exists; otherwise, it does not.
-
-Example 1: A simple path that has an Euler path
-Graph: nodes {1, 2, 3}, edges: (1,2), (2,3)
-Step 1: Compute degrees. Node 1 has degree 1, node 2 has degree 2, node 3 has degree 1.
-Step 2: Count odd-degree vertices. Nodes 1 and 3 have odd degree, giving exactly two odd-degree vertices.
-Step 3: Check connectedness. All nodes are connected through edges.
-Conclusion: Conditions are satisfied, so an Euler path exists.

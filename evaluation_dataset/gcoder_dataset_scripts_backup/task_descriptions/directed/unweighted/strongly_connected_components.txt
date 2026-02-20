@@ -1,4 +1,0 @@
- In a graph G =
- {V,E}, a strongly connected component (SCC) is a maximal
- subgraph where every pair of nodes u and v are reachable
- from each other. The task is to count the largest strongly connected components and return the number of it.

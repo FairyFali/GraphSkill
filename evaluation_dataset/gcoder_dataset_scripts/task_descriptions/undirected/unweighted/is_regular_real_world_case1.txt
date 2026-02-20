@@ -1,1 +1,0 @@
-Scenario: In a company’s buddy program, a connection exists between two employees only if they mutually agree to be buddies (each link is mutual and simply present or absent). Determine whether every employee has the same number of buddies. Return a boolean value.

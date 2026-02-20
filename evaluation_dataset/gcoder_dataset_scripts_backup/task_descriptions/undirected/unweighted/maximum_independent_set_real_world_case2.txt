@@ -1,1 +1,0 @@
-You’re selling tickets in a theater under social-distancing rules. Some pairs of seats are too close to be occupied at the same time. Choose the largest set of seats to sell so that no two chosen seats are within the restricted distance of each other. Return the size of the set.

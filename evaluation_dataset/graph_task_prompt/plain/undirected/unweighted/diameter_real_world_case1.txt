@@ -1,5 +1,0 @@
-- Social network: Find the maximum degrees of separation between any two people in a mutual-friendship network to gauge how broadly information might need to travel.
-
-- Road network: Given cities connected by two-way roads of equal length, determine the largest minimum number of roads required to get between the two most distant cities to measure the network’s span.
-
-- Computer/communication network: In a symmetric, equal-cost topology, compute the largest shortest hop count between any two devices to estimate worst-case message hops.

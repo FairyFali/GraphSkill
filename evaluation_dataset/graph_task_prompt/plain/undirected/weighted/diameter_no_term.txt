@@ -1,1 +1,0 @@
-Given a weighted undirected graph G = (V, E), compute the largest shortest-path distance between any pair of vertices; this maximum distance characterizes the graph’s overall extent.

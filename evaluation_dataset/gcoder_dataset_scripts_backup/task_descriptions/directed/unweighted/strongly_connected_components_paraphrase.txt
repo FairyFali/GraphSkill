@@ -1,1 +1,0 @@
-Given an unweighted directed graph G = (V, E), a strongly connected component is a largest-possible set of vertices in which every vertex can reach every other via directed paths. Your goal is to count the number of SCC.

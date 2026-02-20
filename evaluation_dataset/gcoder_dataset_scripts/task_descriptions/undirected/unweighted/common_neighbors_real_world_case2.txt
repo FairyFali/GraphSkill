@@ -1,1 +1,0 @@
-In an academic collaboration network where two authors are connected if they’ve co-authored at least one paper (no edge weights and collaboration is mutual), given two author IDs u and v, find all authors who have co-authored with both of them and return their IDs as a List[Int].

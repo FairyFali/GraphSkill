@@ -1,1 +1,0 @@
-University course planning: Given a list of courses and their prerequisite relationships (if you must complete Course A before Course B), determine whether there exists a single order in which you can take the courses so that each course is taken exactly once and all prerequisite directions are respected.

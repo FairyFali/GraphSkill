@@ -1,1 +1,0 @@
-Retail basket analysis: Model purchases as an undirected bipartite graph where edges connect customers to products they’ve bought. Given two product nodes u and v, find the set (or count) of customers connected to both—i.e., shoppers who purchased both items—to support cross-sell bundling, affinity scoring, and targeted promotions.

@@ -1,1 +1,0 @@
-Given an unweighted, undirected graph G = (V, E), compute a coefficient v that quantifies how interconnected each node’s neighbors are—that is, the ratio of existing edges among a node’s neighbors to the number of edges that could exist among them.

@@ -1,1 +1,0 @@
-Consider an academic citation network where papers cite other papers: given the list of one-way citation links (Paper A cites Paper B) treated as simple yes/no connections, and a specific paper, compute that paper’s clustering coefficient—the extent to which its directly connected papers also cite one another. Only return the coefficient value as  float.

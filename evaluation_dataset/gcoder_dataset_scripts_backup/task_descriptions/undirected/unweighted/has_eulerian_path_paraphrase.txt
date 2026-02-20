@@ -1,1 +1,0 @@
-Given an undirected graph, determine whether it contains an Euler path—a walk that uses every edge exactly once. Such a path exists if and only if the graph is connected and has exactly 0 or 2 vertices of odd degree.

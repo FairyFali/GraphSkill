@@ -1,1 +1,0 @@
-Imagine a social network where edges represent mutual friendships, and each friendship counts as one step. For every pair of people, determine the fewest number of friendship steps needed to connect them, then return the largest such step count (the network’s “longest shortest chain”) as  int.

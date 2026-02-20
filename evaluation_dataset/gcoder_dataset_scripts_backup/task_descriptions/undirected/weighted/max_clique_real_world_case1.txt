@@ -1,1 +1,0 @@
-Given a real-world network of entities (e.g., people, devices, or products) represented as a weighted undirected graph—where edge weights reflect relationship strength or compatibility—identify the largest group in which every pair of entities is directly connected to each other. Return the set of entities forming this largest fully interconnected group (the maximum clique).

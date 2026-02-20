@@ -1,1 +1,0 @@
-In a research database where each paper has a one-way link to the papers it cites, decide whether all papers can be split into two non-overlapping groups so that no paper cites another paper within its own group. Return a boolean (true if such a split is possible, false otherwise).

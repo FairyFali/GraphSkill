@@ -1,1 +1,0 @@
-You are given an unweighted, undirected graph specified by an edge list, where each pair (u, v) represents a two-way connection between nodes u and v. Calculate the graph’s diameter, defined as the largest shortest-path distance across all pairs of nodes. Return the diameter as an int.

@@ -1,1 +1,0 @@
-Given a country map where cities are connected by two-way roads (no distances or capacities considered), determine whether the road network is fully connected—i.e., from any city you can reach every other city via available roads. Return only a boolean value.

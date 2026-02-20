@@ -1,1 +1,0 @@
-For an unweighted, directed graph G = (V, E), compute the diameter—the largest shortest-path distance between any pair of vertices—to gauge the graph’s overall span.

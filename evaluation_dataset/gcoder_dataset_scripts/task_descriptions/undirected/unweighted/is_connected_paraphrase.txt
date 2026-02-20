@@ -1,1 +1,0 @@
-You are given an undirected, unweighted graph as an edge list, where each pair (u, v) represents a two-way connection between nodes u and v. Determine if the graph is connected by checking that every vertex is reachable from every other vertex. Return only a boolean value.

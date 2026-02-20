@@ -1,1 +1,0 @@
-Given a directed, unweighted graph G = (V, E), decide whether a Hamiltonian path exists—that is, an ordering of all vertices where each vertex appears exactly once and every consecutive pair is connected by a directed edge.

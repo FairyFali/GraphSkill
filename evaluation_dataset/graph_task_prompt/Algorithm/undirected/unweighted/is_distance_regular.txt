@@ -1,8 +1,0 @@
-Breadth-First Search (BFS) distance profiling; The idea is to run BFS from every vertex to compute its distance distribution, meaning how many vertices lie at distance 1, distance 2, distance 3, and so on. Then compare these distance distributions across all vertices. If every vertex has the same count of nodes at each distance, the graph is distance-regular; otherwise, it is not.
-
-Example 1: A simple cycle that is distance-regular
-Graph: nodes {A, B, C, D}, edges: (A,B), (B,C), (C,D), (D,A)
-Step 1: Run BFS from A. Distances: distance 1 has {B, D} count 2; distance 2 has {C} count 1.
-Step 2: Run BFS from B. Distances: distance 1 has {A, C} count 2; distance 2 has {D} count 1.
-Step 3: Run BFS from C and D similarly. All vertices have the same pattern: two nodes at distance 1, one node at distance 2.
-Conclusion: All distance distributions match, so the graph is distance-regular.

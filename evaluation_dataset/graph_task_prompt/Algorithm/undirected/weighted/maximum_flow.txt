@@ -1,8 +1,0 @@
-Ford Fulkerson Method with Edmonds Karp; The idea is to repeatedly find augmenting paths from the source to the sink in the residual graph, compute how much additional flow can be pushed along each path, update the residual capacities, and continue until no more augmenting paths exist. The total flow at that point is the maximum flow.
-
-Example 1: A simple graph with one augmenting path
-Graph: nodes {s, A, t}, edges: (s, A) capacity 5, (A, t) capacity 3
-Step 1: The residual graph initially matches capacities. Find an augmenting path s to A to t.
-Step 2: The minimum residual capacity along the path is min(5, 3) which is 3. Push flow 3 along the path.
-Step 3: Update residual capacities. Edge (s, A) now has residual capacity 2, and (A, t) now has residual capacity 0. No further path exists because the edge to t is fully saturated.
-Final max flow: 3.

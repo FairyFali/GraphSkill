@@ -1,1 +1,0 @@
-Plan a hiking route in a national park: treat trail junctions as nodes and each trail segment as an directed edge with a positive weight (e.g., estimated hiking time, distance, or difficulty). Find the sequence of trails from one trailhead to another that minimizes the total accumulated weight, yielding the least-time/least-effort hike.

@@ -1,1 +1,0 @@
-Given a graph G = {V,E} the task is to determine if the graph is connected

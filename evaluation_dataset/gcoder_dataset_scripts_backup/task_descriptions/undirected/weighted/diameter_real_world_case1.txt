@@ -1,1 +1,0 @@
-Given a transportation or logistics network where edges carry travel times or costs, compute the network’s diameter—the longest among all shortest routes between any two locations—to quantify the worst-case travel time/distance across the system for planning and resilience analysis.

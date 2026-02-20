@@ -1,1 +1,0 @@
-Given an unweighted, undirected graph G = (V, E), check whether all vertex pairs share the same distance profile: for every two vertices u and v and for each distance d ≥ 0, the number of vertices at distance d from u equals the number at distance d from v. If this holds for all pairs, the graph qualifies; otherwise, it does not.

@@ -1,1 +1,0 @@
-Imagine a social network where friendships are mutual (two-way) and each friendship has a strength based on how often the two people interact; for a given person, compute the clustering coefficient that reflects how tightly their friends are connected to each other. You should only return the coefficient value as  float type.

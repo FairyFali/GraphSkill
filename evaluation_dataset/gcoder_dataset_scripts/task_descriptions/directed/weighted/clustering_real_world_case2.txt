@@ -1,1 +1,0 @@
-Imagine a bank transfer network where each account is a node, and each arrow goes from the payer to the payee with a weight equal to the total value of transfers between them. For a specified account, compute its clustering coefficient—how strongly the accounts it transacts with also transfer funds among themselves. You should only return the coefficient value as  float type.

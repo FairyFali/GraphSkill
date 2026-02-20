@@ -1,1 +1,0 @@
-You are given a directed, unweighted graph represented by an edge list, where each edge is an ordered pair of nodes (u, v) indicating a one-way connection from u to v. Implement a function with no arguments that returns an int equal to the maximum shortest-path distance between any pair of nodes. Return this value as an int.

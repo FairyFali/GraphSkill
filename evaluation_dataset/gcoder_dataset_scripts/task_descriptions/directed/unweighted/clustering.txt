@@ -1,1 +1,0 @@
-You are given a directed, unweighted graph represented by an edge list, where each edge is an ordered pair (u, v) indicating a directed connection from u to v. Given a node node, compute the clustering coefficient of node, which measures how densely its neighbors are interconnected. Return only the coefficient value as a float.

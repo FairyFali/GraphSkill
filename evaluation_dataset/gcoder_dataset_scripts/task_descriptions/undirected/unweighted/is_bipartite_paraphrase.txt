@@ -1,1 +1,0 @@
-You are provided an undirected, unweighted graph described by an edge list, where each pair (u, v) denotes a bidirectional link between u and v. Determine if the graph is bipartite—that is, if its vertices can be split into two disjoint groups such that no edge connects two nodes within the same group. Return a boolean value.
