@@ -1,0 +1,1 @@
+You are given a directed, weighted graph described by an edge list, where each entry (u, v, c) denotes a directed edge from u to v with positive capacity c. Determine the greatest feasible amount of flow that can be sent from _snode to _tnode without violating any capacity limits. Return only the flow value as a float.

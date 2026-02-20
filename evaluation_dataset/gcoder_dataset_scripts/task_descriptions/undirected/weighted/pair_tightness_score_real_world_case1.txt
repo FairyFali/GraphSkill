@@ -1,0 +1,10 @@
+Compute a collaboration tightness score for two employees s and t in an organizational communication network, combining their overlap in directly connected colleagues with their separation by communication delay. The goal is to quantify how tightly s and t are connected within the organization.
+
+Definitions:
+- The input is an undirected communication network given by weighted links (u, v, w) where w is a nonnegative delay/effort measure for communication between u and v; if multiple records exist for the same pair {u, v}, their weights are summed to produce a single link. Direct connectivity (adjacency) is based on the resulting simple undirected network (weights ignored for adjacency).
+- d(s, t) is the shortest total communication delay between s and t along available links using weights as segment delays; if no communication path is possible, d(s, t) is infinite.
+- N_common is the set of employees who have a direct link to both s and t; |N_common| is its size.
+- For any employee u, C(u) is the local contact clustering computed on the unweighted network (weights ignored): C(u) = 0 if u has fewer than two direct contacts; otherwise it is the fraction of realized links among u’s contacts out of all possible links between them.
+- The employee-pair tightness score is T(s, t) = (|N_common| + (C(s) + C(t)) / 2) / (1 + d(s, t)).
+
+Return T(s, t) as a real-valued number; if no communication path exists between s and t, return no value.

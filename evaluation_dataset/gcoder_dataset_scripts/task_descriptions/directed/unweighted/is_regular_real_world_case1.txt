@@ -1,0 +1,1 @@
+Imagine a social network of one-way “follows,” where each follow is just a simple link with no score. Determine whether every user has the same total number of connections (counting both followers and followings). Return a boolean: true if the network is regular, false otherwise.

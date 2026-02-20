@@ -1,0 +1,1 @@
+**This task is to produce a topological order of a directed graph ( G = (V, E) ).** A topological ordering is a sequence of all nodes where, for every directed edge ((u, v) \in E), the node (u) precedes (v) in the sequence. Such an ordering is only possible when the graph has no directed cycles, meaning it must form a directed acyclic graph (DAG).

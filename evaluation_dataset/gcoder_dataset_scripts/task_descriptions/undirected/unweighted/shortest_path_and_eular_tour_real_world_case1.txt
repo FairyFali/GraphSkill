@@ -1,0 +1,5 @@
+Compute a hybrid robustness score for an electric power transmission network given by a list of transmission lines and two key substations s and t. The score uses the grid’s span when a single-sweep inspection route exists, and otherwise uses the higher neighborhood interconnection of s and t.
+
+The grid is represented by an edge list, where each line is an unordered pair of substations indicating a bidirectional link; s and t are substations in this grid. A single-sweep inspection route is a walk that traverses every line exactly once; if such a route exists, compute the grid’s diameter on the subnetwork induced by substations that participate in at least one line (distance is the number of lines on a shortest path between two substations), and define this diameter to be 0 if there are no such substations. For a substation v, the local neighborhood interconnection C(v) is 0 when deg(v) < 2, and otherwise equals the number of lines directly linking pairs of v’s neighboring substations divided by deg(v)·(deg(v)−1)/2; if the grid has no single-sweep route, the score is max(C(s), C(t)).
+
+Return the hybrid robustness score as a single number.

@@ -1,0 +1,9 @@
+Local clustering coefficient computation (ignoring edge weights); The idea is to measure how tightly a node v’s neighbors are connected to each other: list all neighbors of v, count how many edges actually exist between those neighbors, compute how many edges could possibly exist between them, and define the clustering coefficient of v as (number of edges between neighbors of v) divided by (maximum possible number of edges between neighbors of v). In this basic version we use only the graph structure; the weight function w is ignored.
+
+Example 1: Fully clustered neighborhood
+Graph: nodes {A, B, C}, edges: (A,B), (A,C), (B,C) with any positive weights
+Task: compute clustering coefficient of node A
+Step 1: List neighbors of A. Neighbors are {B, C}. There are 2 neighbors.
+Step 2: Count edges among neighbors. Between B and C there is 1 edge (B,C). So existing edges between neighbors = 1.
+Step 3: Compute possible edges among neighbors. With 2 neighbors, there is 1 possible edge between them.
+Step 4: Clustering coefficient of A = existing edges divided by possible edges = 1 divided by 1 = 1.0.

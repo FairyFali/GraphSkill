@@ -1,0 +1,13 @@
+Paraphrased task:
+
+Compute a “pair tightness” score for two nodes s and t in a weighted, undirected graph that fuses how much their neighborhoods overlap with how close they are by weighted shortest path. The score measures how strongly s and t are tied.
+
+Definitions:
+- Input graph: undirected with nonnegative edge weights given as triples (u, v, w). If multiple edges occur between the same unordered pair {u, v}, replace them with a single edge whose weight is the sum of those weights. All adjacency/neighborhood notions are taken on this resulting simple graph, ignoring weights.
+- d(s, t): the length of a shortest s–t path where edge weights are the lengths; if s and t are disconnected, d(s, t) is infinite.
+- N_common: the set of vertices adjacent to both s and t; |N_common| is its cardinality.
+- For any vertex u, its local clustering coefficient C(u) is computed on the unweighted version of the graph: if degree(u) < 2 then C(u) = 0; otherwise C(u) equals the number of edges among u’s neighbors divided by the number of possible neighbor–neighbor edges.
+- Pair tightness:
+  T(s, t) = (|N_common| + (C(s) + C(t)) / 2) / (1 + d(s, t)).
+
+Output T(s, t) as a real number; if s and t are disconnected (no finite d(s, t)), produce no value.

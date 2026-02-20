@@ -1,0 +1,1 @@
+You are given an undirected, unweighted graph specified by an edge list, where each pair (u, v) denotes a bidirectional link between nodes u and v. For two nodes, source and target, compute the set of nodes that are neighbors of both source and target. Return these common neighbors as a list.

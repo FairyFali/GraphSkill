@@ -1,0 +1,11 @@
+Retrieved Doc: min_weighted_vertex_cover ( G , weight = None ) [source] # Returns an approximate minimum weighted vertex cover. The set of nodes returned by this function is guaranteed to be a\nvertex cover, and the total weight of the set is guaranteed to be at\nmost twice the total weight of the minimum weight vertex cover. In\nother words, \\[w(S) \\leq 2 * w(S^*),\\] where \\(S\\) is the vertex cover returned by this function, \\(S^*\\) is the vertex cover of minimum weight out of all vertex\ncovers of the graph, and \\(w\\) is the function that computes the\nsum of the weights of each node in that given set. Parameters : G NetworkX graph weight string, optional (default = None) If None, every node has weight 1. If a string, use this node\nattribute as the node weight. A node without this attribute is\nassumed to have weight 1. Returns : min_weighted_cover set Returns a set of nodes whose weight sum is no more than twice\nthe weight sum of the minimum weight vertex cover. Notes For a directed graph, a vertex cover has the same definition: a set\nof nodes such that each edge in the graph is incident to at least\none node in the set. Whether the node is the head or tail of the\ndirected edge is ignored. This is the local-ratio algorithm for computing an approximate\nvertex cover. The algorithm greedily reduces the costs over edges,\niteratively building a cover. The worst-case runtime of this\nimplementation is \\(O(m \\log n)\\) , where \\(n\\) is the number\nof nodes and \\(m\\) the number of edges in the graph. References [ 1 ] Bar-Yehuda, R., and Even, S. (1985). “A local-ratio theorem for\napproximating the weighted vertex cover problem.” Annals of Discrete Mathematics , 25, 27–46\n< http://www.cs.technion.ac.il/~reuven/PDF/vc_lr.pdf >
+Task Description: Given an undirected graph G with no weights on the edges, calculate the minimum vertex cover problem of the graph. A vertex cover X of a graph G is defined as a set of vertices such that every edge of G has at least one endpoint in X. Return the minimum vertex cover.
+Output Code: 
+```python
+        import networkx as nx
+        def min_weighted_vertex_cover(edge_list, weight=None):
+            G = nx.Graph()
+            G.add_edges_from(edge_list)\n    
+            result = nx.algorithms.approximation.min_weighted_vertex_cover(G, weight=weight)
+            return result
+```

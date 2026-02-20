@@ -1,0 +1,1 @@
+You’re given a one-way interaction network (e.g., who emails whom), with no link weights. Choose the smallest set of users to monitor or secure so that every message is “covered,” meaning for each message, either its sender or its recipient is in the chosen set.

@@ -1,0 +1,5 @@
+Paraphrased task:
+
+Compute a hybrid structure metric for an undirected, unweighted graph defined by an edge list and two special nodes s and t. If the graph admits an Eulerian trail (a walk that traverses each edge exactly once), the score is the graph’s diameter measured on the subgraph induced by all nodes with degree > 0; distances are shortest-path lengths in edges, and the diameter is 0 if this subgraph is empty. Otherwise, the score is the larger of the local clustering coefficients of s and t.
+
+The graph is given as a list of unordered node pairs representing bidirectional edges, with s and t belonging to the graph. For any node v, its local clustering coefficient C(v) is 0 when deg(v) < 2; otherwise, C(v) equals the number of edges among v’s neighbors divided by deg(v)·(deg(v)−1)/2. Return the hybrid structural score as a single numeric value.

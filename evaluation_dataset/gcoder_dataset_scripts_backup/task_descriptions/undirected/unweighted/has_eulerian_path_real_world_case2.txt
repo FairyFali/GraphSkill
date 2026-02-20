@@ -1,0 +1,5 @@
+Real‑world task: Given a museum floor plan where rooms are nodes and two‑way doorways are edges, determine whether a guard can make a patrol that passes through each doorway exactly once without reusing any doorway. This is possible only if the floor plan is all connected and there are either:
+- zero rooms with an odd number of doorways (then the patrol starts and ends in the same room), or
+- exactly two such rooms (then the patrol must start at one of them and end at the other).
+
+If the condition holds, produce such a patrol route.

@@ -1,0 +1,1 @@
+You are given a directed, weighted graph in edge-list form, where each edge is a triple (u, v, w) representing a directed edge from u to v with weight w. For a specified input node (argument name: node), calculate the node’s clustering coefficient, reflecting how strongly it participates in tightly connected groups in the graph. Return only the coefficient as a float.

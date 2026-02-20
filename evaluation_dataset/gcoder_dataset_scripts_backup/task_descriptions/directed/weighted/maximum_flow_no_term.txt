@@ -1,0 +1,1 @@
+Given a directed graph G = (V, E, c) where c: E -> R+ assigns a positive capacity to each edge, and designated nodes v_s (source) and v_t (sink), determine a feasible routing of flow from v_s to v_t that respects all edge capacities and yields the largest possible total amount delivered to v_t.

@@ -1,0 +1,1 @@
+You are given a directed, unweighted graph described by an edge list, where each edge is an ordered pair (u, v) denoting a directed link from u to v. Determine if the graph is regular, i.e., every node has the same in-degree and the same out-degree. Return a boolean value.

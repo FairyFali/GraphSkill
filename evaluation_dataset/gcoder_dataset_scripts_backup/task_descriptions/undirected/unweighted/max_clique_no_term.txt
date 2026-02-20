@@ -1,0 +1,1 @@
+Given an unweighted, undirected graph G, find the largest clique: a subset of vertices where every pair of distinct vertices is connected by an edge. Return that vertex set.

@@ -1,0 +1,5 @@
+Compute an endpoint-adjusted flow score for a weighted directed graph between two given terminals, _snode and _tnode. The score equals the maximum s–t flow multiplied by a factor derived from the endpoints’ local clustering in the undirected projection.
+
+Input: a directed network with finite, nonnegative real edge capacities given as triples (u, v, w), where w is the capacity of edge u→v; if multiple triples share (u, v), their capacities are added. Let F(_snode, _tnode) denote the maximum flow value from _snode to _tnode under these capacities. Build an undirected simple graph on the same vertex set by replacing each directed edge (u, v) with the undirected edge {u, v}; if both directions appear, keep a single undirected edge; ignore weights. For any vertex x, define C(x) as its local clustering coefficient in this undirected graph: the proportion of unordered neighbor pairs of x that are connected by an edge (and 0 if x has fewer than two neighbors). Set S = F(_snode, _tnode) * (1 + (C(_snode) + C(_tnode)) / 2).
+
+Output S as a real number.

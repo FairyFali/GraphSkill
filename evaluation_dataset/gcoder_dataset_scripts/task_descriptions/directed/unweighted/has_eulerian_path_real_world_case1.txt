@@ -1,0 +1,1 @@
+You’re given a map of one-way streets in a city with no travel costs attached to the roads. Determine if a driver can follow a route that uses every street segment exactly once. Such a route exists exactly when the street network is connected and either zero or two intersections have an odd total number of incoming and outgoing streets. Return a boolean value.

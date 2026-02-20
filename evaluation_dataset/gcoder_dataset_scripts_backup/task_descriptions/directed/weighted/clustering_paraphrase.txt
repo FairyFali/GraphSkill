@@ -1,0 +1,1 @@
+Given a weighted, directed graph G = (V, E), compute the clustering coefficient for a node v, which quantifies how strongly v’s neighbors are interconnected (i.e., how tightly they form clusters).

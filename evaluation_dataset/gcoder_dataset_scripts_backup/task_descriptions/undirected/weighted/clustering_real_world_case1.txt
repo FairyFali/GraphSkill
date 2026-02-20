@@ -1,0 +1,1 @@
+Given a social network where each node is a person and edge weights reflect how often they interact, compute the local and overall clustering coefficients to quantify how tightly each person’s friends are connected to one another. This measures the prevalence of tight-knit groups (triangles) and helps identify cohesive communities.

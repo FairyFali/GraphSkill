@@ -1,0 +1,1 @@
+Given a directed graph G = (V, E), find a topological ordering of its vertices: a linear arrangement v1, v2, ..., vn such that for every directed edge u->v in E, u appears before v in the sequence. Such an ordering exists only if the graph is acyclic (i.e., G is a DAG). Equivalently, for every edge u->v, the index of u in the order is less than the index of v.

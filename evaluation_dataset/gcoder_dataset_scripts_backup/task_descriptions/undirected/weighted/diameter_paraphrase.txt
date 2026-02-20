@@ -1,0 +1,1 @@
+In a graph G = (V, E), the diameter is the largest among all pairwise shortest-path distances. Compute this maximum distance to gauge how far apart vertices can be in the graph.

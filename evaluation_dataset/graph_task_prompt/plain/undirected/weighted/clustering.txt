@@ -1,0 +1,3 @@
+ Consider a graph G =
+ {V,E}. The task is to compute the clustering coefficient v,
+ which measures the degree to which nodes cluster together.

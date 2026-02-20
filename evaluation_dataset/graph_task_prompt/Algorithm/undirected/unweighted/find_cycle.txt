@@ -1,0 +1,22 @@
+## Cycle detection for an **undirected, unweighted graph**
+
+For an undirected graph, a cycle exists if during a graph traversal we encounter a previously visited node that is **not the direct parent** of the current node. A standard way to check this is to perform **Depth-First Search (DFS)** while tracking the parent of each node.
+
+---
+
+### Example 1: An undirected graph with a cycle
+
+Graph: nodes {A, B, C, D}, undirected edges: {A,B}, {B,C}, {C,A}, {C,D}
+Task: check whether the graph is cyclic
+
+**Step 1:** Initialize all nodes as unvisited.
+
+**Step 2:** Choose an arbitrary starting node, for example node A, and start DFS from A. Mark A as visited and set its parent as None.
+
+**Step 3:** From A, visit its neighbor B. Mark B as visited and record A as its parent.
+
+**Step 4:** From B, visit its neighbor C. Mark C as visited and record B as its parent.
+
+**Step 5:** From C, examine its neighbors. One neighbor is A, which is already visited and is **not the parent of C**.
+
+**Step 6:** Since an already visited node that is not the parent is found, a cycle exists. The graph is cyclic.

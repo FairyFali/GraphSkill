@@ -1,0 +1,1 @@
+Real-world paraphrase: Given a network (e.g., intersections connected by roads, or computers connected by cables), choose the smallest set of locations to place monitors/guards/sensors so that every connection is observed at least at one endpoint. Return that minimal set of locations.

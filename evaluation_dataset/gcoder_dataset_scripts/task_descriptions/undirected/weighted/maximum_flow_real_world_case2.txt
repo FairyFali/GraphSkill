@@ -1,0 +1,1 @@
+Imagine a content delivery network where servers are connected by bidirectional fiber links, each labeled with a positive bandwidth capacity. Given a source data center and a destination data center, compute the maximum sustained data rate that can be transmitted from the source to the destination through this network. Return only the flow value as  float.

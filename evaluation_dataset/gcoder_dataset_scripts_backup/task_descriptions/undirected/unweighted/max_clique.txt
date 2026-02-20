@@ -1,0 +1,2 @@
+Given an undirected graph G with no weights on the edges, calculate the maximum clique problem of the graph. A clique
+X of a graph G is defined as a set of vertices such that there is an edge between any two nodes u, v in X. Return the maximum clique.

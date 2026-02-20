@@ -1,0 +1,1 @@
+Identify isolated subnetworks in a real-world network (e.g., roads, power lines, or communication links): given an undirected network where edges carry weights like distance or capacity, return all groups of nodes that are mutually reachable via some sequence of links (connected components), with no path to nodes outside each group.

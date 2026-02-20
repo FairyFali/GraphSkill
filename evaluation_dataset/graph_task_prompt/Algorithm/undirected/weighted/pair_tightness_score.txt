@@ -1,0 +1,30 @@
+Dijkstra's Algorithm; The idea is to use a priority queue to repeatedly select the node with the smallest known distance from the source, relax all of its edges by updating neighbor distances if a shorter path is found, and continue until all reachable nodes have been processed or the target node is reached. The final recorded distance for the target node gives the minimum total weight of the shortest path.
+
+Example 1: A simple linear graph
+Graph: nodes {A, B, C}, edges: (A,B) weight 2, (B,C) weight 3
+Task: shortest path from A to C
+Step 1: Initialize distances: dist(A)=0, dist(B)=infinity, dist(C)=infinity.
+Step 2: Select A. Relax A to B: dist(B)=2.
+Step 3: Select B (next smallest distance). Relax B to C: dist(C)=2+3=5.
+Step 4: Select C. No more neighbors to update.
+Conclusion: Shortest path from A to C is weight 5, with path A to B to C.
+
+Local clustering coefficient computation (ignoring edge weights); The idea is to measure how tightly a node v’s neighbors are connected to each other: list all neighbors of v, count how many edges actually exist between those neighbors, compute how many edges could possibly exist between them, and define the clustering coefficient of v as (number of edges between neighbors of v) divided by (maximum possible number of edges between neighbors of v). In this basic version we use only the graph structure; the weight function w is ignored.
+
+Example 1: Fully clustered neighborhood
+Graph: nodes {A, B, C}, edges: (A,B), (A,C), (B,C) with any positive weights
+Task: compute clustering coefficient of node A
+Step 1: List neighbors of A. Neighbors are {B, C}. There are 2 neighbors.
+Step 2: Count edges among neighbors. Between B and C there is 1 edge (B,C). So existing edges between neighbors = 1.
+Step 3: Compute possible edges among neighbors. With 2 neighbors, there is 1 possible edge between them.
+Step 4: Clustering coefficient of A = existing edges divided by possible edges = 1 divided by 1 = 1.0.
+
+Neighbor set intersection; The idea is to list the neighbors of node u and the neighbors of node v, then compute the intersection of these two neighbor sets to get the common neighbors.
+
+Example 1: Two nodes with shared friends
+Graph: nodes {1, 2, 3, 4, 5}, edges: (1,2), (1,3), (1,4), (2,3), (2,5)
+Goal: find the common neighbors of nodes 1 and 2
+Step 1: List the neighbors of node 1. Neighbors(1) = {2, 3, 4}.
+Step 2: List the neighbors of node 2. Neighbors(2) = {1, 3, 5}.
+Step 3: Compute the intersection of the two sets: {2, 3, 4} ∩ {1, 3, 5} = {3}.
+Step 4: The common neighbors of nodes 1 and 2 are {3}, so the number of common neighbors is 1.

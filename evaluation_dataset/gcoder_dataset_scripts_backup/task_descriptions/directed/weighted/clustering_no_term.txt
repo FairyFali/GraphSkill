@@ -1,0 +1,1 @@
+Given a weighted directed graph G = (V, E), compute the coefficient v that quantifies how strongly a node’s neighbors are connected to one another, i.e., the proportion of closed triplets (triangles) among the possible neighbor pairs.

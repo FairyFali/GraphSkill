@@ -1,0 +1,1 @@
+Find the fastest route between two locations in a directed city’s road network, where intersections are nodes and roads have positive weights (e.g., travel time, distance, or tolls), by choosing the path that minimizes the total accumulated weight.

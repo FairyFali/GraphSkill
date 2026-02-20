@@ -1,0 +1,3 @@
+{
+    "traveling_salesman_problem": "def generate_tsp_nodes(edge_list):\n    \"\"\"\n    Generate a test sample for the `nodes` parameter of the TSP function.\n    Returns all unique nodes from the edge list in order of first appearance.\n\n    Edge formats supported:\n    - (u, v)\n    - (u, v, weight)\n    - (u, v, attr_dict)\n    \"\"\"\n    seen = set()\n    nodes = []\n    for edge in edge_list:\n        if not isinstance(edge, (list, tuple)) or len(edge) < 2:\n            continue\n        u, v = edge[0], edge[1]\n        if u not in seen:\n            seen.add(u)\n            nodes.append(u)\n        if v not in seen:\n            seen.add(v)\n            nodes.append(v)\n    return nodes"
+}

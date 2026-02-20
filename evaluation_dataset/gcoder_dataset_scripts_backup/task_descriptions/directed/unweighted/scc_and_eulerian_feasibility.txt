@@ -1,0 +1,7 @@
+Define a **structural complexity score** for an unweighted directed graph $ G $ as follows:
+
+* If the edges of $ G $ can be arranged into a single trail that uses every edge exactly once, the score is the number of nodes in the largest subgraph in which every node is mutually reachable from every other node by following directed edges.
+* Otherwise, the score is the total count of such mutually reachable subgraphs present in $ G $.
+
+**Task.**
+Given an unweighted directed graph $ G $, compute and return this structural complexity score.

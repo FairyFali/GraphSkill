@@ -1,0 +1,1 @@
+You are given a directed, unweighted graph described by an edge list, where each pair (u, v) denotes a directed edge from u to v. Determine the number of strongly connected components (SCCs), where an SCC is a maximal set of nodes such that every node is reachable from every other node in the set. Return only the count as an integer.

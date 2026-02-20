@@ -1,0 +1,6 @@
+Given a directed graph $ G $, first partition its nodes into maximal groups such that within each group, every node can reach every other node by following directed edges.
+
+For each such group $ C $, form a new graph by keeping only the nodes in $ C $, treating all edges between them as bidirectional, and ignoring edge directions. For this resulting graph, compute the largest minimum number of edges required to travel between any two nodes in the group.
+
+**Task.**
+For every group obtained in this way, compute the corresponding value and return the list of all such values, ordered from largest to smallest.

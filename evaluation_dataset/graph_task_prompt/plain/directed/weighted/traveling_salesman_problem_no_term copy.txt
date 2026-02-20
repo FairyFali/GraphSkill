@@ -1,0 +1,1 @@
+Given a complete undirected graph where every pair of vertices is connected by a weighted edge, compute the minimum-weight Hamiltonian cycle—a closed tour that visits each vertex exactly once and returns to the starting vertex.

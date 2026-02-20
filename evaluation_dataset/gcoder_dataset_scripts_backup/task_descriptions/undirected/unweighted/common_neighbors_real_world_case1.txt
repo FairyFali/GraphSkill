@@ -1,0 +1,1 @@
+Mutual-connections lookup in a social network: Given an undirected friendship graph and two users u and v, find the set (or count) of users who are connected to both—i.e., their mutual friends—for use in features like friend recommendations or trust scoring.

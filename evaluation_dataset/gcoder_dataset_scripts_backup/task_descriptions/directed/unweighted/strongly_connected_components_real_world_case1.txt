@@ -1,0 +1,1 @@
+Given an airline route network where a directed edge from airport A to airport B means there’s a flight from A to B, find the largest group of airports such that any airport in the group can reach any other via some sequence of flights. Return the number of groups.

@@ -1,0 +1,1 @@
+Check whether the network has uniform connectivity layers: for every node, the histogram of shortest-path distances to all other nodes (counts at 1 hop, 2 hops, … up to the diameter) is identical. In other words, verify that any two nodes see the same number of nodes at each hop distance, indicating the network is distance‑regular.

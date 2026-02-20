@@ -1,0 +1,32 @@
+Breadth First Search (BFS) / Depth First Search (DFS) component expansion; The idea is to repeatedly pick an unvisited node, run BFS (or DFS) to collect all nodes reachable from it as one connected component, mark them visited, and repeat until every node belongs to some component.
+
+Example 1: Two connected components
+Graph: nodes {1, 2, 3, 4, 5}, edges: (1,2), (2,3), (4,5)
+Step 1: Initialize visited = empty, components = empty. Pick an unvisited node, for example node 1. Start BFS from 1.
+Step 2: Visit 1, mark 1 visited, queue = [1].
+Step 3: Dequeue 1, its neighbor is 2. Mark 2 visited and enqueue it. Now queue = [2].
+Step 4: Dequeue 2, its neighbors are 1 and 3. Node 1 is already visited; mark 3 visited and enqueue it. Now queue = [3].
+Step 5: Dequeue 3, its neighbor is 2 which is already visited. Queue is empty, so the first component is {1,2,3}. Add it to components.
+Step 6: Find the next unvisited node: node 4. Start BFS from 4.
+Step 7: Visit 4, mark 4 visited, queue = [4]. Dequeue 4, visit neighbor 5, mark 5 visited, enqueue 5.
+Step 8: Dequeue 5, its neighbor 4 is already visited. Queue is empty, so the second component is {4,5}. Add it to components.
+Step 9: All nodes are now visited, so the connected components are [{1,2,3}, {4,5}].
+
+Ford Fulkerson Method with Edmonds Karp; The idea is to repeatedly find augmenting paths from the source to the sink in the residual graph, compute how much additional flow can be pushed along each path, update the residual capacities, and continue until no more augmenting paths exist. The total flow at that point is the maximum flow.
+
+Example 1: A simple graph with one augmenting path
+Graph: nodes {s, A, t}, edges: (s, A) capacity 5, (A, t) capacity 3
+Step 1: The residual graph initially matches capacities. Find an augmenting path s to A to t.
+Step 2: The minimum residual capacity along the path is min(5, 3) which is 3. Push flow 3 along the path.
+Step 3: Update residual capacities. Edge (s, A) now has residual capacity 2, and (A, t) now has residual capacity 0. No further path exists because the edge to t is fully saturated.
+Final max flow: 3.
+
+Local clustering coefficient computation (ignoring edge weights); The idea is to measure how tightly a node v’s neighbors are connected to each other: list all neighbors of v, count how many edges actually exist between those neighbors, compute how many edges could possibly exist between them, and define the clustering coefficient of v as (number of edges between neighbors of v) divided by (maximum possible number of edges between neighbors of v). In this basic version we use only the graph structure; the weight function w is ignored.
+
+Example 1: Fully clustered neighborhood
+Graph: nodes {A, B, C}, edges: (A,B), (A,C), (B,C) with any positive weights
+Task: compute clustering coefficient of node A
+Step 1: List neighbors of A. Neighbors are {B, C}. There are 2 neighbors.
+Step 2: Count edges among neighbors. Between B and C there is 1 edge (B,C). So existing edges between neighbors = 1.
+Step 3: Compute possible edges among neighbors. With 2 neighbors, there is 1 possible edge between them.
+Step 4: Clustering coefficient of A = existing edges divided by possible edges = 1 divided by 1 = 1.0.

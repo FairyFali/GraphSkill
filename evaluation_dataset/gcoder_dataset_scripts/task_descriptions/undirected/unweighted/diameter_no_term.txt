@@ -1,0 +1,1 @@
+You are given an undirected, unweighted graph represented by an edge list, where each edge is a pair of nodes (u, v) indicating a bidirectional connection between u and v. Compute the largest shortest-path distance between any pair of nodes. Return the value as an int.

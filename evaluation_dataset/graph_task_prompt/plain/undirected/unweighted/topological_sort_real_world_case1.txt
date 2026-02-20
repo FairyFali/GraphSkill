@@ -1,0 +1,5 @@
+Real‑world version:
+
+You’re given a set of tasks and their “must happen before” dependencies (a directed dependency graph). Find an order to perform all tasks so that every task comes after all of its prerequisites. If the dependencies contain a cycle (some tasks depend on each other in a loop), report that no valid ordering/schedule exists.
+
+Examples: building software modules with build dependencies, planning coursework with prerequisites, or scheduling jobs where some jobs must finish before others start.

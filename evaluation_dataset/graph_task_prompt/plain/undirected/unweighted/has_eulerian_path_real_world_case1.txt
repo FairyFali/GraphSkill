@@ -1,0 +1,5 @@
+Real‑world task: Given a map of intersections (nodes) and two‑way roads (edges), determine whether you can plan a route that uses every road exactly once without repeating any road. This is possible only if the road network is all connected and there are either:
+- zero intersections with an odd number of roads (then the route starts and ends at the same intersection), or
+- exactly two such intersections (then the route must start at one of them and end at the other).
+
+If the condition holds, produce such a route.

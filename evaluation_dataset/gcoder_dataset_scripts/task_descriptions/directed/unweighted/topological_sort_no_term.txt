@@ -1,0 +1,1 @@
+You are given a directed, unweighted graph represented by an edge list, where each edge is a pair (u, v) indicating a directed connection from u to v. Determine a linear ordering of the nodes such that each node appears before all nodes it points to. Return the ordering as a list of nodes. If no such ordering exists (i.e., the graph has a cycle), return an empty list.

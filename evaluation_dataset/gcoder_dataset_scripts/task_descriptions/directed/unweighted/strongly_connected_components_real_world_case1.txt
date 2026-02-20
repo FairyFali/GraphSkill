@@ -1,0 +1,1 @@
+Imagine a city map where intersections are connected by one-way streets. Determine how many separate driving zones exist such that within each zone you can start at any intersection and reach every other intersection (and return) by following the available one-way streets. Return only the count as  integer.

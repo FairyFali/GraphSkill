@@ -1,0 +1,9 @@
+Local clustering coefficient computation; For a given node v, we take all neighbors of v, count how many edges actually exist between those neighbors, compute how many neighbor edges could possibly exist in total, and then define the clustering coefficient of v as (number of edges between neighbors of v) divided by (maximum possible number of edges between neighbors of v). If v has fewer than two neighbors, its clustering coefficient is defined as zero.
+
+Example 1: A triangle where the center node has high clustering
+Graph: nodes {A, B, C}, edges: (A,B), (B,C), (A,C)
+Task: compute clustering coefficient of node A
+Step 1: List neighbors of A. Neighbors are {B, C}. There are 2 neighbors.
+Step 2: Count edges among neighbors. Between B and C there is 1 edge: (B,C). So the number of existing edges between neighbors is 1.
+Step 3: Compute possible edges among neighbors. With 2 neighbors, the maximum number of edges between neighbors is 1 (since there is only the pair B and C).
+Step 4: Clustering coefficient of A is existing edges between neighbors divided by possible edges between neighbors, which is 1 divided by 1, giving 1.0.

@@ -1,0 +1,1 @@
+Given an unweighted, undirected graph G = (V, E), determine whether there exists a trail that uses every edge exactly once (an Euler trail). This is possible if and only if all vertices with nonzero degree lie in a single connected component and the number of vertices with odd degree is either 0 or 2.

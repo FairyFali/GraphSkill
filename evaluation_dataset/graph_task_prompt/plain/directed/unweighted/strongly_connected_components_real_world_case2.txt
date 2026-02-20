@@ -1,0 +1,1 @@
+Imagine a city map with one-way streets: draw a directed edge from intersection A to intersection B if you can drive from A to B along a one-way street. Find the largest set of intersections where, following the one-way directions, you can start at any intersection in the set and reach any other. Return the list of intersections in that set.

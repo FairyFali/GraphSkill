@@ -1,0 +1,11 @@
+You’re given an undirected graph with nonnegative edge capacities and a fixed sink node t. The task is to select one canonical source per connected component, compute a score that blends s→t flow with s’s neighborhood cohesion, and return the representative with the highest score.
+
+Definitions:
+- Graph: provided as a list of triples (u, v, w), where w ≥ 0 is the symmetric capacity on edge {u, v}.
+- Connected component: a largest set of vertices where each vertex can reach any other via undirected paths.
+- Component representative s: the unique minimum node in the component under the default ordering; if node types don’t share a natural ordering, compare their string encodings and pick the lexicographically smallest.
+- pair_tightness_score(s, t): the maximum flow value from s to t using the given capacities; if s and t are in different components, this value is 0.
+- flow_aware_local_clustering_among_cc(t): for each component’s representative s, define L(s) as s’s undirected local clustering coefficient on the entire graph, ignoring weights (i.e., edges present among neighbors of s divided by the total possible among those neighbors; if s has fewer than two neighbors, L(s) = 0).
+- Component score for C: S_C = pair_tightness_score(s, t) × (1 + L(s)).
+
+Output the representative node s whose component maximizes S_C across all components.

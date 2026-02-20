@@ -1,0 +1,10 @@
+Task: Compute a pair tightness score for two nodes s and t in a weighted, undirected graph that blends overlap in their neighbor sets with how far apart they are by total edge weight. The aim is to quantify how strongly s and t are tied.
+
+Definitions:
+- Input: An undirected graph given by weighted edges (u, v, w) with nonnegative real weights. If multiple edges appear for the same unordered pair {u, v}, sum their weights to obtain a single edge. Adjacency is defined on this aggregated simple graph (ignore weights for adjacency).
+- d(s, t): The minimum total weight of any path from s to t; if no route exists, treat d(s, t) as infinite.
+- N∩: The set of vertices adjacent to both s and t; |N∩| is its size.
+- For any vertex u, define a local transitivity measure T_local(u): if degree(u) < 2, T_local(u) = 0; otherwise, T_local(u) equals the number of links among u’s neighbors divided by the number of all possible links among those neighbors (computed on the unweighted graph).
+- Pair tightness: T(s, t) = (|N∩| + (T_local(s) + T_local(t)) / 2) / (1 + d(s, t)).
+
+Output: Return T(s, t) as a real number. If s and t are disconnected (no path), return no value.

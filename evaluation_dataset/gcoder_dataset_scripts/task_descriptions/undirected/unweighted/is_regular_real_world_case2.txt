@@ -1,0 +1,1 @@
+In a university study-group network, two students are linked only if they’ve mutually agreed to study together (each connection is mutual and either exists or doesn’t). Determine whether every student has the same number of study partners. Return a boolean value.

@@ -1,0 +1,2 @@
+Given an undirected graph G with no weights on the edges, calculate the common neighbors of node pairs in the graph. The
+Python code will receive the graph G and two nodes u, v.

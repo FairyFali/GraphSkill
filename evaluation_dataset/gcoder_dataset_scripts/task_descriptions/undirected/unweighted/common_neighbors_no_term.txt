@@ -1,0 +1,1 @@
+You are given an undirected, unweighted graph represented by an edge list, where each edge is a pair (u, v) indicating a bidirectional connection between u and v. Given two nodes, source and target, compute the set of nodes that are directly connected to both source and target. Return these nodes as a list.

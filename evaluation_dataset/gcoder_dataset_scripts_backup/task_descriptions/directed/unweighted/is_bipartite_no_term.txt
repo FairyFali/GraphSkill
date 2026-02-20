@@ -1,0 +1,1 @@
+Given an unweighted directed graph G = (V, E), decide whether the vertices can be split into two disjoint groups U and W so that every edge goes between the groups—no edge has both endpoints in the same group. Return true if such a partition exists; otherwise, return false.

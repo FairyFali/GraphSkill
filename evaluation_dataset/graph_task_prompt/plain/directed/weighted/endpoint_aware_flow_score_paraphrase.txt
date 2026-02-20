@@ -1,0 +1,4 @@
+Given a weighted directed graph G, a source node s, and a sink node t, compute in parallel: 
+(1) the maximum flow value F from s to t, and 
+(2) the local clustering coefficients of s and t in the undirected projection of G. 
+Define the endpoint-aware flow score S = F * (1 + (C(s) + C(t))/2). Return S

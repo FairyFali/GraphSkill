@@ -1,0 +1,1 @@
+Imagine a film industry network where each node is an actor and an edge connects two actors if they have co-starred in at least one production (co-starring is mutual and there’s no weight—either they’ve co-starred or not). Find the largest ensemble of actors such that every pair in the group has co-starred with each other. Return the actor IDs as  List[Int].

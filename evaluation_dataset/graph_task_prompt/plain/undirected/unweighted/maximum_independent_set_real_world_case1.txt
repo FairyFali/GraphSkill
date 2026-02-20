@@ -1,0 +1,1 @@
+Given a network where each node is an entity (e.g., people, tasks, devices) and an edge means two entities are incompatible or cannot be chosen together, select the largest possible group of entities such that no two in the group are connected. In other words, find the biggest set of mutually non-conflicting entities.

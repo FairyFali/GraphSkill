@@ -1,0 +1,5 @@
+Compute a hybrid structural score for an undirected, unweighted graph given by an edge list and two distinguished nodes s and t. The score uses the graph’s diameter when an Eulerian trail exists, and otherwise uses the larger local clustering coefficient of s and t.
+
+The input graph is represented by a list of edges, where each edge is an unordered pair of nodes indicating a bidirectional connection; s and t are nodes in this graph. An Eulerian trail is a walk that uses every edge exactly once; if such a trail exists, compute the diameter on the subgraph induced by nodes of positive degree (distance is the number of edges on a shortest path between two nodes), and define this diameter to be 0 if there are no such nodes. For a node v, the local clustering coefficient C(v) is 0 when deg(v) < 2, and otherwise equals the number of edges between neighbors of v divided by deg(v)·(deg(v)−1)/2; if the graph has no Eulerian trail, the score is max(C(s), C(t)).
+
+Return the hybrid structural score as a single number.

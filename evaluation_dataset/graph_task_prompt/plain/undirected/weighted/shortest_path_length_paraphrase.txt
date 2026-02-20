@@ -1,0 +1,1 @@
+Given an undirected graph with positive edge weights G = (V, E, w), where w assigns a positive cost to each edge, compute the shortest path between two specified nodes. In other words, find a sequence of edges connecting the source and target whose total weight (sum of edge costs) is minimal.

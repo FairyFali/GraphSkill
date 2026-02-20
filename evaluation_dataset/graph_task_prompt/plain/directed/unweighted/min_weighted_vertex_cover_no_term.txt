@@ -1,0 +1,1 @@
+Given a directed, unweighted graph G, find a minimum-size vertex cover: the smallest set of vertices such that for every edge (u, v), at least one of u or v is included in the set.

@@ -1,0 +1,1 @@
+Imagine a museum floor plan where rooms are linked by two-way doorways and every doorway is treated the same. Determine if you can take a single continuous tour that passes through every doorway exactly once. This is possible only if the layout is all in one connected piece and exactly zero or two rooms have an odd number of doorways. Return a boolean value.

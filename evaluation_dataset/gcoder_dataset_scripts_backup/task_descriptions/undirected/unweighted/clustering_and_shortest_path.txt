@@ -1,0 +1,31 @@
+Bridge hubs characterize how effectively a node connects different regions of a network. To quantify this property, define a bridge-hub score for each node $ v $ as
+$$
+S(v) = \frac{1 - C(v)}{\bar{d}(v)},
+$$
+where $ C(v) $ measures how strongly the neighbors of $ v $ are interconnected, and $ \bar{d}(v) $ denotes the average number of steps required to reach all other nodes that are reachable from $ v $.
+
+Intuitively, a node attains a high score if it is not tightly surrounded by mutually connected neighbors, while still remaining close, on average, to the rest of the graph.
+
+You are given an undirected graph $ G $ and an integer $ k $. For each node $ v \in G $, compute its bridge-hub score as defined above, treating nodes with no reachable neighbors as having infinite average distance and a score of zero. Return the $ k $ nodes with the highest scores, listed in descending order of score. If scores are equal, break ties using the node identifiers.
+
+The quantities $ C(v) $ and $ \bar{d}(v) $ are defined as follows:
+
+**Local neighborhood interconnection**
+$$
+C(v) =
+\begin{cases}
+\dfrac{2E_v}{k_v(k_v - 1)}, & k_v \ge 2, \
+0, & k_v < 2,
+\end{cases}
+$$
+where $\Gamma(v) $ is the set of neighbors of $ v $, $ k_v = |\Gamma(v)| $, and $ E_v $ is the number of edges among nodes in $ \Gamma(v) $.
+
+**Average distance from a node**
+$$
+\bar{d}(v) =
+\begin{cases}
+\dfrac{1}{|\mathcal{R}(v)|} \sum\limits_{u \in \mathcal{R}(v)} d(v,u), & \mathcal{R}(v) \neq \emptyset, \
+\infty, & \mathcal{R}(v) = \emptyset,
+\end{cases}
+$$
+where $ \mathcal{R}(v) = { u \in V \setminus {v} \mid d(v,u) < \infty } $.

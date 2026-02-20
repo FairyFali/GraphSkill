@@ -1,0 +1,3 @@
+Given an unweighted directed graph G, compute its strongly connected components (SCCs). 
+For each SCC, take the induced subgraph and treat it as an undirected graph, then compute its diameter. 
+Return a list of diameter for all components.

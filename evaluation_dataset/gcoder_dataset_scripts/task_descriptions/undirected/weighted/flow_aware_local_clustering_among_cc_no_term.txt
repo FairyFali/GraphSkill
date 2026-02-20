@@ -1,0 +1,11 @@
+You are given an undirected, weighted graph (edge capacities) and a designated sink node t. The goal is to score one canonical representative source per mutually reachable region by combining s→t flow with s’s local neighbor interconnection, then pick the best representative.
+
+Definitions:
+- Graph: specified by an edge list of triples (u, v, w), where w ≥ 0 is the bidirectional capacity on edge {u, v}.
+- Region: a maximal set of nodes where each node can reach every other via undirected edges.
+- Representative source s for a region R: the unique node in R that is smallest under the standard ordering; if node types are not mutually comparable, compare their string representations and take the lexicographically smallest.
+- pair_tightness_score(s, t): the value of the best s→t flow under the given edge capacities; if s and t lie in different regions, this score is defined as 0.
+- For each region’s representative s, let L(s) be the undirected local neighbor interlink ratio computed on the whole graph while ignoring edge weights (i.e., the number of edges among s’s neighbors divided by the number of possible edges among those neighbors; if s has fewer than two neighbors, L(s) = 0).
+- Region score for R: S_R = pair_tightness_score(s, t) × (1 + L(s)).
+
+Return the representative node s whose region achieves the maximum S_R across all regions.

@@ -1,0 +1,1 @@
+Imagine a website where each page has hyperlinks to other pages, and you can only move in the direction of those links. Treat every hyperlink as one click (all links count equally). Compute the site’s diameter: the largest, over all pairs of pages, of the shortest number of forward clicks needed to get from one page to another by following links. Return the diameter as  int type.

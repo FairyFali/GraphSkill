@@ -1,0 +1,1 @@
+Given an unweighted, undirected graph G, find a largest independent set: a maximum-size subset of vertices such that no two chosen vertices are adjacent.

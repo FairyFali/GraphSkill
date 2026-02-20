@@ -1,0 +1,1 @@
+Given an undirected, unweighted graph G = (V, E), decide whether the graph is connected—that is, whether there is a path between every pair of vertices.

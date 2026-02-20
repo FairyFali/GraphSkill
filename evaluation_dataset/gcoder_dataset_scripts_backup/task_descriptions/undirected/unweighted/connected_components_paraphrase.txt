@@ -1,0 +1,1 @@
+Given an undirected, unweighted graph G, determine how many connected components it has. A connected component is a subset of vertices in which every pair of vertices is linked by a path that remains entirely within the subset.

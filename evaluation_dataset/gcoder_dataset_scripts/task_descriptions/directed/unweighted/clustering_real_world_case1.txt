@@ -1,0 +1,1 @@
+Imagine a social media platform where users can follow others: given the list of one-way “follow” links (A follows B) treated as simple yes/no connections, and a specific user, compute that user’s clustering coefficient—the extent to which the user’s immediate connections also follow one another. Only return the coefficient value as  float.

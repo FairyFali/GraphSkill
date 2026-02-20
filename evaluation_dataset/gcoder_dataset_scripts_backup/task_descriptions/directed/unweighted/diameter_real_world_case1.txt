@@ -1,0 +1,1 @@
+Given cities connected by one-way roads of equal length, determine the largest minimum number of roads required to get between the two most distant cities to measure the network’s span.

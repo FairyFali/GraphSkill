@@ -1,0 +1,1 @@
+You are given an undirected, unweighted graph represented by an edge list, where each edge is a pair of nodes (u, v) indicating a bidirectional connection between u and v. Compute a maximum clique: the largest set of vertices such that every pair of vertices in the set is connected by an edge. Return any one maximum clique as a list of nodes.

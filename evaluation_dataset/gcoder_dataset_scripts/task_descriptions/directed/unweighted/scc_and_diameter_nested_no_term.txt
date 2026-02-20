@@ -1,0 +1,5 @@
+Compute, for each maximal subset of vertices in a directed graph where every vertex can reach every other via directed paths, the largest among all pairwise shortest-path lengths in the undirected graph formed by ignoring directions within that subset. Produce one integer per such subset representing this maximum.
+
+The input is a list of directed edges, each given as an ordered pair (u, v) meaning an edge from u to v; the vertex set is all nodes that appear in the pairs, and multiple occurrences of the same edge are treated as a single connection. For each maximal mutually reachable subset C, build an undirected graph on C by adding an undirected edge {u, v} if either (u, v) or (v, u) appears with both endpoints in C. Path lengths are counted in number of edges. The value for C is 0 when |C| ≤ 1; otherwise it is the maximum, over all pairs in C, of the shortest-path length between them in this undirected graph.
+
+Return a list of integers with these values, one per subset, in the order induced by the enumeration of the subsets.

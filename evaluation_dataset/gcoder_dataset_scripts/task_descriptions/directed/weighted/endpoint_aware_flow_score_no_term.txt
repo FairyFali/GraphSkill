@@ -1,0 +1,5 @@
+Compute an endpoint-aware flow score for a weighted directed network between two specified endpoints, _snode and _tnode. This score multiplies the best achievable s→t throughput by a factor based on the triangle density around the endpoints in the undirected projection.
+
+The input is a directed graph with finite, nonnegative real capacities on edges, given as triples (u, v, w) where w is the capacity of edge u→v; if multiple triples share the same ordered pair (u, v), their capacities are summed. Let F(_snode, _tnode) denote the largest feasible value of an s→t shipment under these capacities. Build an undirected simple graph on the same node set by replacing every directed edge (u, v) with a single undirected edge {u, v} (if both directions exist, keep only one; ignore weights). For any node x, let C(x) be the fraction of unordered neighbor pairs of x that are themselves connected by an edge in this undirected graph (and 0 if x has fewer than two neighbors). Define S = F(_snode, _tnode) * (1 + (C(_snode) + C(_tnode)) / 2).
+
+Return S as a real-valued number.

@@ -1,0 +1,1 @@
+Given a catalog of university courses and their prerequisite links (an arrow from Course A to Course B means A must be completed before B, with no weights or costs on the links), compute an order to take the courses so that each course appears before any course that depends on it. Return the ordering as a list of nodes.

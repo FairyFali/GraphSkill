@@ -1,0 +1,5 @@
+You are given an undirected, unweighted graph represented by an edge list and two designated nodes s and t. Your goal is to identify the nodes on any shortest path from s to t that maximize local clustering, with ties broken by proximity to s.
+
+A shortest s–t path is any path with the minimum number of edges among all s–t paths. Let V_{s,t} be the union of all nodes that appear on at least one shortest s–t path. For any node v, let Γ(v) be its neighbor set, k_v = |Γ(v)|, and E_v the number of edges whose endpoints are both in Γ(v); define the local clustering coefficient C(v) as 0 if k_v < 2, otherwise C(v) = 2*E_v/(k_v*(k_v−1)). Let C_max be the maximum C(v) over v in V_{s,t}, and let B = { v in V_{s,t} | C(v) = C_max }. Define d(s, v) as the minimum number of edges in a path from s to v.
+
+Return the nodes in B in ascending order of d(s, v); if no path exists between s and t, return null.

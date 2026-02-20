@@ -1,0 +1,4 @@
+In a graph G = {V,E}, an Euler
+ path is a trail that visits every edge exactly once. The task
+ and only if the graph is connected and exactly zero or two
+ vertices have odd degree.

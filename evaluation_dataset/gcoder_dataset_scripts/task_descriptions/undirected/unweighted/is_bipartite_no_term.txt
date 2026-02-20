@@ -1,0 +1,1 @@
+You are given an undirected, unweighted graph represented by an edge list, where each edge is a pair of nodes (u, v) indicating a bidirectional connection between u and v. Determine whether the nodes can be split into two disjoint groups such that every edge connects nodes from different groups. Return a boolean value.

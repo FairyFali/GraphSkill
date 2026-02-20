@@ -1,0 +1,1 @@
+Given an unweighted directed graph G, first check whether G has an Eulerian path. If it does, return the number of nodes of the largest strongly connected component. Otherwise, return only the number of strongly connected components.

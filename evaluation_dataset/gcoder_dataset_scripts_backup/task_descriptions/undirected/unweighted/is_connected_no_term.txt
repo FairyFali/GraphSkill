@@ -1,0 +1,1 @@
+Given an unweighted, undirected graph G = (V, E), decide whether all vertices belong to a single component—that is, whether every pair of vertices is connected by some path.

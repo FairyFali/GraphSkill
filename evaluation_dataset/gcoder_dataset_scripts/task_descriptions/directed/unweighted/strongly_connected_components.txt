@@ -1,0 +1,1 @@
+You are given a directed, unweighted graph represented by an edge list, where each edge is an ordered pair (u, v) indicating a one-way connection from u to v. Compute the number of strongly connected components (SCCs), where each SCC is a maximal subgraph in which every pair of nodes is mutually reachable. Return only the count as an integer.

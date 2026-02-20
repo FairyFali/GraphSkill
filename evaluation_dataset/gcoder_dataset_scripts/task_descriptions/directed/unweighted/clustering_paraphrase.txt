@@ -1,0 +1,1 @@
+You are given a directed, unweighted graph as a list of edges, where each pair (u, v) represents a directed edge from u to v. For a specified node, compute that node’s clustering coefficient, which quantifies how strongly its neighbors are connected to each other. Output only the coefficient as a float.

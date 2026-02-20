@@ -1,0 +1,1 @@
+You are given an undirected, unweighted graph as a list of edges, where each edge is a pair (u, v) representing a two-way link between u and v. Check if the graph is regular—i.e., all vertices have equal degree—and return a boolean result.

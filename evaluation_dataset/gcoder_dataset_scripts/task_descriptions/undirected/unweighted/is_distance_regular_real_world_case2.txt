@@ -1,0 +1,1 @@
+Imagine a city map where intersections are connected by two-way streets, and you measure distance by the number of street segments (hops) between them. Determine whether this road network has perfectly uniform reach: for any two intersections, the number of other intersections exactly 1 street away, 2 streets away, 3 streets away, etc., is identical. Return a boolean value.

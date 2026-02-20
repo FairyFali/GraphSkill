@@ -1,0 +1,34 @@
+Breadth First Search (BFS) reachability; The idea is to start from an arbitrary node, explore the graph using BFS to visit all vertices that are reachable from this starting node, and then check whether every vertex in the graph has been visited. If all vertices are visited from the starting node, the graph is connected; if some vertices remain unvisited, the graph is not connected.
+
+Example 1: A simple connected chain
+Graph: nodes {1, 2, 3, 4}, edges: (1,2), (2,3), (3,4)
+Step 1: Choose a starting node, for example node 1. Mark it as visited and place it in the BFS queue.
+Step 2: Dequeue 1, visit its neighbor 2, mark 2 as visited, and add 2 to the queue.
+Step 3: Dequeue 2, visit its neighbor 3 (1 is already visited), mark 3 as visited, and add 3 to the queue.
+Step 4: Dequeue 3, visit its neighbor 4, mark 4 as visited, and add 4 to the queue.
+Step 5: Dequeue 4, its only neighbor 3 is already visited. The queue is now empty, and all nodes {1,2,3,4} are marked visited, so the graph is connected.
+
+Breadth First Search (BFS) all-pairs eccentricity; The idea is to run BFS from each node to get its shortest-path distances to all other nodes, take the farthest distance from that node (its eccentricity), and then take the maximum eccentricity over all nodes as the graph diameter.
+
+Example 1: A simple connected chain
+Graph: nodes {1, 2, 3, 4}, edges: (1,2), (2,3), (3,4)
+Step 1: Run BFS starting from node 1 and compute shortest distances: d(1,1)=0, d(1,2)=1, d(1,3)=2, d(1,4)=3. The farthest distance from 1 is 3.
+Step 2: Run BFS starting from node 2: d(2,1)=1, d(2,2)=0, d(2,3)=1, d(2,4)=2. The farthest distance from 2 is 2.
+Step 3: Run BFS starting from node 3: d(3,1)=2, d(3,2)=1, d(3,3)=0, d(3,4)=1. The farthest distance from 3 is 2.
+Step 4: Run BFS starting from node 4: d(4,1)=3, d(4,2)=2, d(4,3)=1, d(4,4)=0. The farthest distance from 4 is 3.
+Step 5: Take the maximum of these farthest distances: max(3, 2, 2, 3) = 3, so the diameter of the graph is 3.
+
+
+Breadth First Search (BFS) / Depth First Search (DFS) component expansion; The idea is to repeatedly pick an unvisited node, run BFS (or DFS) to collect all nodes reachable from it as one connected component, mark them visited, and repeat until every node belongs to some component.
+
+Example 1: Two connected components
+Graph: nodes {1, 2, 3, 4, 5}, edges: (1,2), (2,3), (4,5)
+Step 1: Initialize visited = empty, components = empty. Pick an unvisited node, for example node 1. Start BFS from 1.
+Step 2: Visit 1, mark 1 visited, queue = [1].
+Step 3: Dequeue 1, its neighbor is 2. Mark 2 visited and enqueue it. Now queue = [2].
+Step 4: Dequeue 2, its neighbors are 1 and 3. Node 1 is already visited; mark 3 visited and enqueue it. Now queue = [3].
+Step 5: Dequeue 3, its neighbor is 2 which is already visited. Queue is empty, so the first component is {1,2,3}. Add it to components.
+Step 6: Find the next unvisited node: node 4. Start BFS from 4.
+Step 7: Visit 4, mark 4 visited, queue = [4]. Dequeue 4, visit neighbor 5, mark 5 visited, enqueue 5.
+Step 8: Dequeue 5, its neighbor 4 is already visited. Queue is empty, so the second component is {4,5}. Add it to components.
+Step 9: All nodes are now visited, so the connected components are [{1,2,3}, {4,5}].

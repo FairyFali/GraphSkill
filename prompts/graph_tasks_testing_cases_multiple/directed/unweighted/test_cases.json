@@ -1,0 +1,684 @@
+{
+    "clustering": [
+        {
+            "edge_list": [
+                [
+                    0,
+                    1
+                ],
+                [
+                    0,
+                    2
+                ],
+                [
+                    0,
+                    3
+                ],
+                [
+                    1,
+                    2
+                ]
+            ],
+            "args": {
+                "node": 1
+            },
+            "answer": 0.5
+        },
+        {
+            "edge_list": [
+                [
+                    0,
+                    1
+                ],
+                [
+                    0,
+                    2
+                ],
+                [
+                    0,
+                    3
+                ],
+                [
+                    1,
+                    2
+                ]
+            ],
+            "args": {
+                "node": 1
+            },
+            "answer": 0.5
+        },
+        {
+            "edge_list": [
+                [
+                    0,
+                    1
+                ],
+                [
+                    0,
+                    2
+                ],
+                [
+                    0,
+                    3
+                ],
+                [
+                    1,
+                    2
+                ]
+            ],
+            "args": {
+                "node": 1
+            },
+            "answer": 0.5
+        },
+        {
+            "edge_list": [
+                [
+                    0,
+                    1
+                ],
+                [
+                    0,
+                    2
+                ],
+                [
+                    0,
+                    3
+                ],
+                [
+                    1,
+                    2
+                ]
+            ],
+            "args": {
+                "node": 1
+            },
+            "answer": 0.5
+        },
+        {
+            "edge_list": [
+                [
+                    0,
+                    1
+                ],
+                [
+                    0,
+                    2
+                ],
+                [
+                    0,
+                    3
+                ],
+                [
+                    1,
+                    2
+                ]
+            ],
+            "args": {
+                "node": 1
+            },
+            "answer": 0.5
+        },
+        {
+            "edge_list": [
+                [
+                    0,
+                    1
+                ],
+                [
+                    0,
+                    2
+                ],
+                [
+                    0,
+                    3
+                ],
+                [
+                    1,
+                    2
+                ]
+            ],
+            "args": {
+                "node": 1
+            },
+            "answer": 0.5
+        },
+        {
+            "edge_list": [
+                [
+                    0,
+                    1
+                ],
+                [
+                    0,
+                    2
+                ],
+                [
+                    0,
+                    3
+                ],
+                [
+                    1,
+                    2
+                ]
+            ],
+            "args": {
+                "node": 1
+            },
+            "answer": 0.5
+        },
+        {
+            "edge_list": [
+                [
+                    0,
+                    1
+                ],
+                [
+                    0,
+                    2
+                ],
+                [
+                    0,
+                    3
+                ],
+                [
+                    1,
+                    2
+                ]
+            ],
+            "args": {
+                "node": 1
+            },
+            "answer": 0.5
+        },
+        {
+            "edge_list": [
+                [
+                    0,
+                    1
+                ],
+                [
+                    0,
+                    2
+                ],
+                [
+                    0,
+                    3
+                ],
+                [
+                    1,
+                    2
+                ]
+            ],
+            "args": {
+                "node": 1
+            },
+            "answer": 0.5
+        },
+        {
+            "edge_list": [
+                [
+                    0,
+                    1
+                ],
+                [
+                    0,
+                    2
+                ],
+                [
+                    0,
+                    3
+                ],
+                [
+                    1,
+                    2
+                ]
+            ],
+            "args": {
+                "node": 1
+            },
+            "answer": 0.5
+        }
+    ],
+    "is_bipartite": [
+        {
+            "edge_list": [
+                [
+                    0,
+                    1
+                ]
+            ],
+            "args": null,
+            "answer": true
+        },
+        {
+            "edge_list": [
+                [
+                    0,
+                    1
+                ]
+            ],
+            "args": null,
+            "answer": true
+        },
+        {
+            "edge_list": [
+                [
+                    0,
+                    1
+                ]
+            ],
+            "args": null,
+            "answer": true
+        },
+        {
+            "edge_list": [
+                [
+                    0,
+                    1
+                ]
+            ],
+            "args": null,
+            "answer": true
+        },
+        {
+            "edge_list": [
+                [
+                    0,
+                    1
+                ]
+            ],
+            "args": null,
+            "answer": true
+        },
+        {
+            "edge_list": [
+                [
+                    0,
+                    1
+                ]
+            ],
+            "args": null,
+            "answer": true
+        },
+        {
+            "edge_list": [
+                [
+                    0,
+                    1
+                ]
+            ],
+            "args": null,
+            "answer": true
+        },
+        {
+            "edge_list": [
+                [
+                    0,
+                    1
+                ]
+            ],
+            "args": null,
+            "answer": true
+        },
+        {
+            "edge_list": [
+                [
+                    0,
+                    1
+                ]
+            ],
+            "args": null,
+            "answer": true
+        },
+        {
+            "edge_list": [
+                [
+                    0,
+                    1
+                ]
+            ],
+            "args": null,
+            "answer": true
+        }
+    ],
+    "has_eulerian_path": [
+        {
+            "edge_list": [
+                [
+                    0,
+                    1
+                ]
+            ],
+            "args": null,
+            "answer": true
+        },
+        {
+            "edge_list": [
+                [
+                    0,
+                    1
+                ]
+            ],
+            "args": null,
+            "answer": true
+        },
+        {
+            "edge_list": [
+                [
+                    0,
+                    1
+                ]
+            ],
+            "args": null,
+            "answer": true
+        },
+        {
+            "edge_list": [
+                [
+                    0,
+                    1
+                ]
+            ],
+            "args": null,
+            "answer": true
+        },
+        {
+            "edge_list": [
+                [
+                    0,
+                    1
+                ]
+            ],
+            "args": null,
+            "answer": true
+        },
+        {
+            "edge_list": [
+                [
+                    0,
+                    1
+                ]
+            ],
+            "args": null,
+            "answer": true
+        },
+        {
+            "edge_list": [
+                [
+                    0,
+                    1
+                ]
+            ],
+            "args": null,
+            "answer": true
+        },
+        {
+            "edge_list": [
+                [
+                    0,
+                    1
+                ]
+            ],
+            "args": null,
+            "answer": true
+        },
+        {
+            "edge_list": [
+                [
+                    0,
+                    1
+                ]
+            ],
+            "args": null,
+            "answer": true
+        },
+        {
+            "edge_list": [
+                [
+                    0,
+                    1
+                ]
+            ],
+            "args": null,
+            "answer": true
+        }
+    ],
+    "topological_sort": [
+        {
+            "edge_list": [
+                [
+                    0,
+                    1
+                ]
+            ],
+            "args": null,
+            "answer": [
+                0,
+                1
+            ]
+        },
+        {
+            "edge_list": [
+                [
+                    0,
+                    1
+                ]
+            ],
+            "args": null,
+            "answer": [
+                0,
+                1
+            ]
+        },
+        {
+            "edge_list": [
+                [
+                    0,
+                    1
+                ]
+            ],
+            "args": null,
+            "answer": [
+                0,
+                1
+            ]
+        },
+        {
+            "edge_list": [
+                [
+                    0,
+                    1
+                ]
+            ],
+            "args": null,
+            "answer": [
+                0,
+                1
+            ]
+        },
+        {
+            "edge_list": [
+                [
+                    0,
+                    1
+                ]
+            ],
+            "args": null,
+            "answer": [
+                0,
+                1
+            ]
+        },
+        {
+            "edge_list": [
+                [
+                    0,
+                    1
+                ]
+            ],
+            "args": null,
+            "answer": [
+                0,
+                1
+            ]
+        },
+        {
+            "edge_list": [
+                [
+                    0,
+                    1
+                ]
+            ],
+            "args": null,
+            "answer": [
+                0,
+                1
+            ]
+        },
+        {
+            "edge_list": [
+                [
+                    0,
+                    1
+                ]
+            ],
+            "args": null,
+            "answer": [
+                0,
+                1
+            ]
+        },
+        {
+            "edge_list": [
+                [
+                    0,
+                    1
+                ]
+            ],
+            "args": null,
+            "answer": [
+                0,
+                1
+            ]
+        },
+        {
+            "edge_list": [
+                [
+                    0,
+                    1
+                ]
+            ],
+            "args": null,
+            "answer": [
+                0,
+                1
+            ]
+        }
+    ],
+    "strongly_connected_components": [
+        {
+            "edge_list": [
+                [
+                    0,
+                    1
+                ]
+            ],
+            "args": null,
+            "answer": 2
+        },
+        {
+            "edge_list": [
+                [
+                    0,
+                    1
+                ]
+            ],
+            "args": null,
+            "answer": 2
+        },
+        {
+            "edge_list": [
+                [
+                    0,
+                    1
+                ]
+            ],
+            "args": null,
+            "answer": 2
+        },
+        {
+            "edge_list": [
+                [
+                    0,
+                    1
+                ]
+            ],
+            "args": null,
+            "answer": 2
+        },
+        {
+            "edge_list": [
+                [
+                    0,
+                    1
+                ]
+            ],
+            "args": null,
+            "answer": 2
+        },
+        {
+            "edge_list": [
+                [
+                    0,
+                    1
+                ]
+            ],
+            "args": null,
+            "answer": 2
+        },
+        {
+            "edge_list": [
+                [
+                    0,
+                    1
+                ]
+            ],
+            "args": null,
+            "answer": 2
+        },
+        {
+            "edge_list": [
+                [
+                    0,
+                    1
+                ]
+            ],
+            "args": null,
+            "answer": 2
+        },
+        {
+            "edge_list": [
+                [
+                    0,
+                    1
+                ]
+            ],
+            "args": null,
+            "answer": 2
+        },
+        {
+            "edge_list": [
+                [
+                    0,
+                    1
+                ]
+            ],
+            "args": null,
+            "answer": 2
+        }
+    ],
+    "is_regular": [],
+    "diameter": []
+}

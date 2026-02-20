@@ -1,0 +1,1 @@
+Given a directed graph G with no weights on the edges, calculate the minimum vertex cover problem of the graph. A vertex cover X of a graph G is defined as a set of vertices such that every edge of G has at least one endpoint in X.

@@ -1,0 +1,91 @@
+Task Description: Given an unweighted undirected graph `edge_list` with a list of edges and a `root` node, your task is to decide whether the connected component containing `root` has any bridges. A bridge in a graph is an edge whose removal causes the number of connected components of the graph to increase. Return a boolean value.
+
+Output Code: 
+```python
+from typing import Any, Dict, List, Set, Tuple
+
+def has_bridges(edge_list: List[List[Any]], root: Any) -> bool:
+    """
+    Decide whether the connected component containing `root` has any bridges
+    in an unweighted undirected graph.
+
+    Notes:
+    - `edge_list` may contain unweighted edges [u, v] or weighted edges [u, v, w].
+      We ignore weights and treat the graph as unweighted.
+    - Self-loops never affect connectivity, so they are ignored.
+    - Parallel edges are supported: multiple edges between the same (u, v) mean
+      that none of those parallel edges is a bridge (removing one still leaves another).
+    """
+    # Build adjacency lists and track multiplicity of undirected edges.
+    adj: Dict[Any, List[Any]] = {}
+    mult: Dict[Tuple[Any, Any], int] = {}
+
+    for e in edge_list:
+        if not isinstance(e, (list, tuple)) or len(e) < 2:
+            continue
+        u, v = e[0], e[1]
+        if u == v:
+            # Self-loop does not change connectivity in an undirected simple sense.
+            continue
+
+        a, b = (u, v) if u <= v else (v, u)  # canonical order (works for comparable node ids)
+        # If nodes are not comparable (mixed types), fall back to string-based ordering.
+        try:
+            key = (a, b)
+        except TypeError:
+            su, sv = str(u), str(v)
+            key = (u, v) if su <= sv else (v, u)
+
+        mult[key] = mult.get(key, 0) + 1
+
+        adj.setdefault(u, []).append(v)
+        adj.setdefault(v, []).append(u)
+
+    # If root is isolated or not present in edges, its component has no bridges.
+    if root not in adj:
+        return False
+
+    # Tarjan DFS for bridges, restricted to the component reachable from root.
+    disc: Dict[Any, int] = {}
+    low: Dict[Any, int] = {}
+    parent: Dict[Any, Any] = {}
+    time = 0
+
+    def canon_key(x: Any, y: Any) -> Tuple[Any, Any]:
+        try:
+            return (x, y) if x <= y else (y, x)
+        except TypeError:
+            sx, sy = str(x), str(y)
+            return (x, y) if sx <= sy else (y, x)
+
+    def dfs(u: Any) -> bool:
+        nonlocal time
+        time += 1
+        disc[u] = time
+        low[u] = time
+
+        for v in adj.get(u, []):
+            if v not in disc:
+                parent[v] = u
+                if dfs(v):
+                    return True  # early exit once a bridge is found
+
+                # Update low-link value after exploring v.
+                if low[v] < low[u]:
+                    low[u] = low[v]
+
+                # Bridge test for tree edge (u, v):
+                # It's a bridge iff low[v] > disc[u] AND there is only one parallel edge.
+                if low[v] > disc[u]:
+                    if mult.get(canon_key(u, v), 1) == 1:
+                        return True
+            else:
+                # Back edge or cross edge; ignore the immediate parent edge.
+                if parent.get(u, None) != v:
+                    if disc[v] < low[u]:
+                        low[u] = disc[v]
+
+        return False
+    result = dfs(root)
+    return result
+```

@@ -1,0 +1,1 @@
+You’re organizing employees into two non-overlapping teams. You’re given a list of employees and pairs of employees who refuse to work together (each refusal is mutual and has no severity level). Determine if it’s possible to split everyone into two teams so that no incompatible pair ends up on the same team. Return a boolean.

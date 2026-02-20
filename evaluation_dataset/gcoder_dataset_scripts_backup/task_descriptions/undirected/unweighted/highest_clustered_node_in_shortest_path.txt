@@ -1,0 +1,38 @@
+You are given an undirected graph $ G = (V,E) $, specified by a list of edges, and two designated nodes $ s $ and $ t $.
+
+Let $ \mathcal{P}(s,t) $ denote the set of all paths between $ s $ and $ t $ that have minimum length (measured by number of edges). Define
+$$
+\mathcal{V}*{s,t} = \bigcup*{p \in \mathcal{P}(s,t)} { v \mid v \in p },
+$$
+the set of nodes that appear on at least one such minimum-length path.
+
+For each node $ v \in \mathcal{V}_{s,t} $, associate a value
+$$
+C(v) =
+\begin{cases}
+\dfrac{2E_v}{k_v(k_v - 1)}, & k_v \ge 2, \\\\
+0, & k_v < 2,
+\end{cases}
+$$
+where $ \Gamma(v) $ is the set of neighbors of $ v $, $ k_v = |\Gamma(v)| $, and $ E_v $ is the number of edges between nodes in $ \Gamma(v) $.
+
+Let
+$$
+C_{\max} = \max_{v \in \mathcal{V}_{s,t}} C(v).
+$$
+
+Select the subset
+$$
+\mathcal{B} = { v \in \mathcal{V}*{s,t} \mid C(v) = C*{\max} }.
+$$
+
+When multiple nodes belong to $ \mathcal{B} $, order them by their distance from $ s $,
+$$
+d(s,v),
+$$
+where $ d(s,v) $ denotes the minimum number of edges required to reach $ v $ from $ s $.
+
+---
+
+**Output:**
+Return the nodes in $ \mathcal{B} $, sorted in ascending order of $ d(s,v) $.

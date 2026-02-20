@@ -1,0 +1,5 @@
+You are given an undirected, unweighted graph represented by an edge list and an integer k. The goal is to identify nodes that act as effective bridges between different parts of the network.
+
+For each node v, let Γ(v) be the set of its neighbors and k_v = |Γ(v)|. Define the local neighborhood interconnection (local clustering coefficient) C(v) as 2E_v / (k_v (k_v − 1)) if k_v ≥ 2 and 0 otherwise, where E_v is the number of edges whose endpoints are both in Γ(v). Let d(v, u) be the unweighted shortest-path distance (in number of edges) from v to a reachable node u ≠ v, and let d̄(v) be the average of d(v, u) over all such reachable nodes; if no such nodes exist (v is isolated), set d̄(v) = ∞. The bridge-hub score is S(v) = (1 − C(v)) / d̄(v), with S(v) = 0 when d̄(v) is ∞ or 0. If multiple nodes have the same score, break ties by node identifier in ascending order.
+
+Return the top k nodes with the highest bridge-hub scores, in descending order of score, breaking ties by node identifier, including for each node its score.

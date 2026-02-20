@@ -1,0 +1,5 @@
+Imagine an airline route map where each node is an airport and an undirected edge means there is a nonstop flight operating in both directions between two airports. You’re given the list of such nonstop connections and two airports s and t. Your goal is to identify the airports that lie on any minimum-layover itinerary from s to t and that have the most tightly interlinked local route neighborhoods, breaking ties by which airport is closer to s.
+
+A shortest s–t itinerary is any sequence of flights with the fewest possible legs. Let V_{s,t} be the union of all airports that appear on at least one such shortest itinerary. For any airport v, let Γ(v) be its set of directly connected airports, k_v = |Γ(v)|, and E_v the number of nonstop links whose endpoints are both in Γ(v); define the local hub clustering C(v) as 0 if k_v < 2, otherwise C(v) = 2*E_v/(k_v*(k_v−1)). Let C_max be the maximum C(v) over v in V_{s,t}, and let B = { v in V_{s,t} | C(v) = C_max }. Define d(s, v) as the minimum number of flights needed to reach v from s.
+
+Return the airports in B in ascending order of d(s, v); if no route exists between s and t, return null.

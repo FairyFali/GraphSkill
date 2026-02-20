@@ -1,0 +1,10 @@
+Compute the pair tightness score for two nodes s and t in a weighted undirected graph, combining their shared neighborhood structure with their weighted shortest-path separation. The goal is to quantify how tightly s and t are coupled.
+
+Definitions:
+- The input is an undirected graph given by weighted edges (u, v, w) with nonnegative real weights; if multiple edges are provided for the same unordered pair {u, v}, their weights are summed to produce a single edge. Adjacency and neighborhood relations are based on the resulting simple undirected graph (weights ignored for adjacency).
+- d(s, t) is the length of a shortest path from s to t using edge weights as path lengths; if no path exists, d(s, t) is infinite.
+- N_common is the set of nodes that are adjacent to both s and t; |N_common| is its size.
+- For any node u, C(u) is its local clustering coefficient computed on the unweighted version of the graph (weights ignored): C(u) = 0 if degree(u) < 2, otherwise it is the number of edges among neighbors of u divided by the total possible number of such edges.
+- The pair tightness score is T(s, t) = (|N_common| + (C(s) + C(t)) / 2) / (1 + d(s, t)).
+
+Return T(s, t) as a real-valued number; if no path exists between s and t, return no value.

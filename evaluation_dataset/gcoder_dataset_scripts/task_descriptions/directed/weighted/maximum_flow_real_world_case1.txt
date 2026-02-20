@@ -1,0 +1,1 @@
+Imagine a city’s one-way water distribution network where each pipe has a maximum throughput (e.g., liters per second). Given the network of pipes between junctions, a main reservoir as the source, and a treatment plant as the sink, compute the greatest possible water delivery rate from the reservoir to the plant. Return only the maximum flow value as  float.

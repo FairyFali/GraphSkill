@@ -1,0 +1,1 @@
+You are given an undirected, unweighted graph represented by an edge list, where each edge is a pair (u, v) indicating a bidirectional connection between u and v. Task: compute the size of the largest subset of vertices such that no two chosen vertices are connected by an edge. Return only the size as int.

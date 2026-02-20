@@ -1,0 +1,1 @@
+Given a weighted undirected graph, find the largest subset of vertices that forms a fully connected subgraph (a clique), and return that vertex set.

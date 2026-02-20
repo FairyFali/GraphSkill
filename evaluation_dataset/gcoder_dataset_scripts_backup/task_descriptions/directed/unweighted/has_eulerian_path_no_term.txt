@@ -1,0 +1,1 @@
+Given an unweighted directed graph G = (V, E), decide whether there exists a trail that traverses every edge exactly once. This is possible exactly when the graph is connected and the number of vertices with odd degree is either 0 or 2.

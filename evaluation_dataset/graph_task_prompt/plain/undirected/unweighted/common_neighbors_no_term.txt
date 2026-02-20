@@ -1,0 +1,1 @@
+Given an undirected, unweighted graph G and two nodes u and v, compute the intersection of their neighbor sets—that is, all vertices adjacent to both u and v. The Python function will receive G, u, and v as inputs.

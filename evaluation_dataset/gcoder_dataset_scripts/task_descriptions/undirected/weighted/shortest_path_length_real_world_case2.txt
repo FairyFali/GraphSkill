@@ -1,0 +1,1 @@
+Imagine a network of hiking trails connecting mountain huts, where each trail is bidirectional and marked with its length. Given a starting hut and a destination hut, determine the minimum total hiking distance along these trails. You should only return the distance as  float.

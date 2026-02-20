@@ -1,0 +1,1 @@
+Imagine a national rail system where each city is a node and an undirected edge between two cities indicates a direct high-speed rail link, with the edge’s weight representing service frequency or capacity. Find the largest set of cities such that every pair of cities in the set has a direct rail connection to each other, and return that set of cities (the maximum clique).

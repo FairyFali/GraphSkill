@@ -1,0 +1,1 @@
+Map distinct friend circles in a social network: given an undirected graph where edges represent mutual friendships and weights capture interaction frequency or closeness, count groups of people who are mutually reachable through chains of friendships (connected components), with no path to users outside each group. And return your count.

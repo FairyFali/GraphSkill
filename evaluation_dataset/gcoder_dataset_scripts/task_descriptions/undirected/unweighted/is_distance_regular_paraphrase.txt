@@ -1,0 +1,1 @@
+You are given an undirected, unweighted graph as an edge list, where each pair (u, v) denotes a two-way link between u and v. Check whether the graph is distance-regular: for every vertex, the counts of nodes at each shortest-path distance match those for every other vertex. Return a boolean result.

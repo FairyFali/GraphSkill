@@ -1,0 +1,21 @@
+**Path existence check for a graph:**
+Given a graph (G = (V, E)) and two nodes (s) (source) and (t) (target), the task is to determine whether there exists **any path** connecting (s) to (t). A standard approach is to perform a **graph traversal** (such as Breadth-First Search or Depth-First Search) starting from (s) and check whether (t) is reachable. In a directed graph, traversal follows edge directions; in an undirected graph, edges can be traversed in either direction.
+
+---
+
+## Example 1: An undirected graph
+
+Graph: nodes ({A, B, C, D, E}), undirected edges: ({A,B}, {B,C}, {C,D})
+Task: check whether there is a path between nodes (A) and (D)
+
+**Step 1:** Initialize all nodes as unvisited.
+
+**Step 2:** Start a traversal from node (A). Mark (A) as visited.
+
+**Step 3:** Visit the neighbors of (A). From ({A,B}), visit node (B) and mark it as visited.
+
+**Step 4:** Continue traversal from (B). Visit node (C) via edge ({B,C}), and mark (C) as visited.
+
+**Step 5:** Continue traversal from (C). Visit node (D) via edge ({C,D}).
+
+**Step 6:** Since node (D) has been reached, a path exists between (A) and (D). The answer is **True**.

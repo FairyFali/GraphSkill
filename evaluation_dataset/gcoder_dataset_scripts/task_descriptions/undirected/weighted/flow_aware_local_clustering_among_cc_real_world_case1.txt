@@ -1,0 +1,13 @@
+Real-world scenario:
+
+You administer a company-wide peer-to-peer data sync network where devices are endpoints and encrypted links connect them. Each link has a maximum symmetric bandwidth (e.g., Mbps). You’re given a designated central archival server t. Your goal is to pick one canonical “representative endpoint” per isolated connectivity island, score each island by combining how much data its representative can stream to the archival server with how tightly interlinked that endpoint’s immediate peers are, and then choose the best representative overall.
+
+Definitions:
+- Sync network: specified by a list of secure link entries (device_u, device_v, bandwidth), where bandwidth ≥ 0 is the maximum bidirectional throughput on link {device_u, device_v}.
+- Connectivity island: a maximal set of devices where each device can reach every other via the encrypted links.
+- Representative endpoint s for an island I: the unique device in I that is smallest under the standard ordering; if identifiers are not mutually comparable, compare their string representations and take the lexicographically smallest.
+- pair_throughput_score(s, t): the maximum achievable data rate from endpoint s to the archival server t respecting link bandwidth caps; if s and t lie in different islands, this score is defined as 0.
+- flow-aware_local_peer_cohesion_among_islands(t): for each island’s representative s, let L(s) be the unweighted local clustering coefficient of s computed on the entire network while ignoring bandwidths (i.e., the number of links among s’s neighboring devices divided by the number of possible links among those neighbors; if s has fewer than two neighbors, L(s) = 0).
+- Island score for I: S_I = pair_throughput_score(s, t) × (1 + L(s)).
+
+Return the representative endpoint s whose island achieves the maximum S_I across all connectivity islands.

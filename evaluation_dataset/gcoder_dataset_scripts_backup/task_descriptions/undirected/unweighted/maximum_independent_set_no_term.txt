@@ -1,0 +1,1 @@
+Given an undirected, unweighted graph G, find the largest subset of vertices such that no two selected vertices are connected by an edge (i.e., all chosen vertices are pairwise non-adjacent). Return the size of this subset.

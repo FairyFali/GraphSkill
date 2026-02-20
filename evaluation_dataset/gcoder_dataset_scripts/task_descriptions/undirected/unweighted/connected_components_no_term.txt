@@ -1,0 +1,1 @@
+You are given an undirected, unweighted graph represented by an edge list, where each edge is a pair of nodes (u, v) indicating a bidirectional connection between u and v. Compute the number of disjoint node groups in the graph. A group is a maximal set of nodes such that every pair of nodes is connected by a path. Return the result as an integer.

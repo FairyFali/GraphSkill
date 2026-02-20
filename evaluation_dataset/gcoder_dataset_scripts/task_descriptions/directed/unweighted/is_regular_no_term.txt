@@ -1,0 +1,1 @@
+You are given a directed, unweighted graph described by an edge list, where each edge (u, v) represents a directed edge from u to v. Decide whether all nodes have the same in-degree and the same out-degree. Return a boolean value.

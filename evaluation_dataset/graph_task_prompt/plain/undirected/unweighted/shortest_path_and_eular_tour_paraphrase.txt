@@ -1,0 +1,2 @@
+Given an unweighted undirected graph G and two nodes s and t, first check whether G has an Eulerian path. If it does, return the diameter of G as the answer. 
+Otherwise, compute the local clustering coefficients of s and t and return the largest as the answer. 

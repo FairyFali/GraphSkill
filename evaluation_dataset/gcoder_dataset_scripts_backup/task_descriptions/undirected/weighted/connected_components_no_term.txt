@@ -1,0 +1,1 @@
+Given an undirected graph with weighted edges, identify and return the number of groups of vertices where every pair of vertices in a group can reach each other via a path that stays entirely within that group.

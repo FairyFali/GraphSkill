@@ -1,0 +1,1 @@
+Imagine auditing a subway system map: for any two stations, count how many other stations are exactly 1 transfer away, 2 transfers away, and so on up to the longest necessary number of transfers. If every station has the same counts at each transfer distance, the network has uniform layer structure—i.e., it’s distance-regular.

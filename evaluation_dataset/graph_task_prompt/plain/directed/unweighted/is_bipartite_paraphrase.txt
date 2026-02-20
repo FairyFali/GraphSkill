@@ -1,0 +1,1 @@
+Determine whether the given directed, unweighted graph G = (V, E) is bipartite—that is, can its vertices be divided into two disjoint sets such that every edge connects a vertex in one set to a vertex in the other, with no edge between vertices within the same set.

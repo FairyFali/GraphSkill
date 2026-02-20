@@ -1,0 +1,39 @@
+Task Description: Given an unweighted undirected graph `edge_list` with a list of edges and a `root` node, your task is to decide whether the connected component containing `root` has any bridges. A bridge in a graph is an edge whose removal causes the number of connected components of the graph to increase. Return a boolean value.
+
+Retrieved Doc: has_bridges(G, root=None)[source] Decide whether a graph has any bridges. A bridge in a graph is an edge whose removal causes the number of connected components of the graph to increase. Parameters : G undirected graph root node (optional) A node in the graph G. If specified, only the bridges in the connected component containing this node will be considered. Returns : bool Whether the graph (or the connected component containing root) has any bridges. Raises : NodeNotFound If root is not in the graph G. NetworkXNotImplemented If G is a directed graph. Notes This implementation uses the networkx.bridges() function, so it shares its worst-case time complexity,  , ignoring polylogarithmic factors, where   is the number of nodes in the graph and   is the number of edges. 
+
+Output Code: 
+```python
+import networkx as nx
+
+def has_bridges(edge_list, root):
+    """
+    Decide whether the connected component containing `root` has any bridges.
+
+    Parameters
+    ----------
+    edge_list : list
+        Unweighted undirected edges as [u, v] (or weighted as [u, v, w], which will be ignored).
+    root : hashable
+        Root node. If specified, only bridges in the connected component containing this node
+        are considered.
+
+    Returns
+    -------
+    bool
+        Whether the connected component containing `root` has any bridges.
+    """
+    G = nx.Graph()
+
+    for e in edge_list:
+        if len(e) >= 2:
+            u, v = e[0], e[1]
+            G.add_edge(u, v)
+
+    # Strictly following docs: has_bridges(G, root=None)
+    result = nx.has_bridges(G, root=root)
+    return result
+
+# result = solve(edge_list, root)
+
+```

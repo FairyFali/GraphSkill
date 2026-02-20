@@ -1,0 +1,1 @@
+Given an unweighted, undirected graph G = (V, E), a graph is distance-regular if for any two vertices u and v, the counts of vertices at each shortest-path distance from u match those from v. The task is to check whether G is distance-regular by verifying this distance-distribution equality for every pair of vertices.

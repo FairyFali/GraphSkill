@@ -1,0 +1,1 @@
+Imagine a city’s water network where junctions are linked by pipes. Some groups of junctions are fully interconnected through sequences of pipes but have no pipe leading to other groups. Determine how many such separate sections exist—each being a set of junctions where any one can reach any other via pipes, with no connections to junctions outside the section.

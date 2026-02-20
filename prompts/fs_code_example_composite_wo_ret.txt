@@ -1,0 +1,211 @@
+Task description: You are given an undirected, unweighted graph represented by an edge list and two designated nodes s and t. Your goal is to identify the nodes on any shortest path from s to t that maximize local clustering, with ties broken by proximity to s.\n\nA shortest s–t path is any path with the minimum number of edges among all s–t paths. Let V_{s,t} be the union of all nodes that appear on at least one shortest s–t path. For any node v, let Γ(v) be its neighbor set, k_v = |Γ(v)|, and E_v the number of edges whose endpoints are both in Γ(v); define the local clustering coefficient C(v) as 0 if k_v < 2, otherwise C(v) = 2*E_v/(k_v*(k_v−1)). Let C_max be the maximum C(v) over v in V_{s,t}, and let B = { v in V_{s,t} | C(v) = C_max }. Define d(s, v) as the minimum number of edges in a path from s to v.\n\nReturn the nodes in B in ascending order of d(s, v); if no path exists between s and t, return null.
+
+Output code: 
+```python
+import networkx as nx
+from typing import List, Optional, Union
+
+def find_max_clustering_nodes_on_shortest_paths(
+    edge_list: List[List[Union[int, float]]], 
+    s: int = 0, 
+    t: int = 4
+) -> Optional[List[int]]:
+    """
+    Find nodes on shortest s-t paths with maximum local clustering coefficient,
+    sorted by distance from s.
+    
+    Parameters:
+    -----------
+    edge_list : List[List[Union[int, float]]]
+        Graph representation as edge list. For unweighted graphs: [u, v]
+        For weighted graphs: [u, v, weight]
+    s : int, default=0
+        Source node
+    t : int, default=4
+        Target node
+    
+    Returns:
+    --------
+    Optional[List[int]]
+        List of nodes with maximum clustering coefficient on shortest paths,
+        sorted by distance from s. Returns None if no path exists or on error.
+    """
+    try:
+        # Create graph from edge list
+        G = nx.Graph()
+        
+        # Check if edges are weighted or unweighted
+        if len(edge_list) == 0:
+            return None
+            
+        # Add edges to graph
+        for edge in edge_list:
+            if len(edge) == 2:
+                # Unweighted edge
+                u, v = edge
+                G.add_edge(u, v)
+            elif len(edge) == 3:
+                # Weighted edge (but we ignore weights for this problem)
+                u, v, _ = edge
+                G.add_edge(u, v)
+            else:
+                # Invalid edge format
+                return None
+        
+        # Check if s and t exist in the graph
+        if s not in G or t not in G:
+            return None
+        
+        # Find all shortest paths from s to t
+        try:
+            # Get all shortest paths
+            all_shortest_paths = list(nx.all_shortest_paths(G, source=s, target=t))
+        except nx.NetworkXNoPath:
+            # No path exists between s and t
+            return None
+        
+        if not all_shortest_paths:
+            return None
+        
+        # Get union of all nodes on shortest paths
+        V_st = set()
+        for path in all_shortest_paths:
+            V_st.update(path)
+        
+        # Calculate local clustering coefficients for nodes in V_st
+        clustering_coeffs = {}
+        for v in V_st:
+            # Get neighbors of v
+            neighbors = list(G.neighbors(v))
+            k_v = len(neighbors)
+            
+            if k_v < 2:
+                clustering_coeffs[v] = 0.0
+            else:
+                # Count edges between neighbors of v
+                E_v = 0
+                # Check all pairs of neighbors
+                for i in range(k_v):
+                    for j in range(i + 1, k_v):
+                        if G.has_edge(neighbors[i], neighbors[j]):
+                            E_v += 1
+                
+                # Calculate clustering coefficient
+                clustering_coeffs[v] = (2.0 * E_v) / (k_v * (k_v - 1))
+        
+        # Find maximum clustering coefficient
+        if not clustering_coeffs:
+            return None
+        
+        C_max = max(clustering_coeffs.values())
+        
+        # Get nodes with maximum clustering coefficient
+        B = [v for v in V_st if abs(clustering_coeffs[v] - C_max) < 1e-10]
+        
+        # Calculate distances from s to each node in B
+        try:
+            # Get shortest path lengths from s to all nodes
+            distances = nx.single_source_shortest_path_length(G, s)
+        except:
+            # Fallback: compute distances manually for nodes in B
+            distances = {}
+            for v in B:
+                try:
+                    dist = nx.shortest_path_length(G, source=s, target=v)
+                    distances[v] = dist
+                except nx.NetworkXNoPath:
+                    # Should not happen since v is on a shortest s-t path
+                    continue
+        
+        # Sort B by distance from s (ascending)
+        B_sorted = sorted(B, key=lambda v: distances.get(v, float('inf')))
+        
+        return B_sorted
+        
+    except Exception as e:
+        # Catch any unexpected errors and return None
+        return None
+
+
+# Alternative implementation using more NetworkX built-in functions
+def find_max_clustering_nodes_on_shortest_paths_alt(
+    edge_list: List[List[Union[int, float]]], 
+    s: int = 0, 
+    t: int = 4
+) -> Optional[List[int]]:
+    """
+    Alternative implementation using more NetworkX built-in functions.
+    """
+    try:
+        # Create graph from edge list
+        G = nx.Graph()
+        
+        if len(edge_list) == 0:
+            return None
+            
+        # Add edges to graph
+        for edge in edge_list:
+            if len(edge) >= 2:
+                u, v = edge[0], edge[1]
+                G.add_edge(u, v)
+        
+        # Check if s and t exist
+        if s not in G or t not in G:
+            return None
+        
+        # Check if path exists
+        if not nx.has_path(G, s, t):
+            return None
+        
+        # Get shortest path length
+        try:
+            shortest_path_length = nx.shortest_path_length(G, source=s, target=t)
+        except nx.NetworkXNoPath:
+            return None
+        
+        # Get all nodes on shortest paths
+        V_st = set()
+        
+        # We can find nodes on shortest paths by checking if they're on
+        # any path of length equal to the shortest path length
+        # Get all simple paths up to the shortest length + 1
+        for path in nx.all_simple_paths(G, source=s, target=t, cutoff=shortest_path_length):
+            if len(path) - 1 == shortest_path_length:  # Path length = nodes - 1
+                V_st.update(path)
+        
+        if not V_st:
+            return None
+        
+        # Calculate clustering coefficients using NetworkX's built-in function
+        # Note: nx.clustering gives the local clustering coefficient
+        all_clustering = nx.clustering(G, nodes=V_st)
+        
+        # Find maximum
+        C_max = max(all_clustering.values())
+        
+        # Get nodes with maximum clustering
+        B = [v for v in V_st if abs(all_clustering[v] - C_max) < 1e-10]
+        
+        # Get distances from s
+        try:
+            # Get all shortest path lengths from s
+            distances = nx.single_source_shortest_path_length(G, s)
+            # Sort by distance
+            B_sorted = sorted(B, key=lambda v: distances.get(v, float('inf')))
+            return B_sorted
+        except:
+            # Fallback: compute distances for nodes in B
+            distances = {}
+            for v in B:
+                try:
+                    dist = nx.shortest_path_length(G, source=s, target=v)
+                    distances[v] = dist
+                except:
+                    continue
+            
+            B_sorted = sorted(B, key=lambda v: distances.get(v, float('inf')))
+            return B_sorted if B_sorted else None
+            
+    except Exception:
+        return None
+```
