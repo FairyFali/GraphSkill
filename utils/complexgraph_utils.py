@@ -11,7 +11,7 @@ from typing import Dict, Any, List, Optional, Tuple
 from collections import defaultdict
 import re, ast
 
-COMPLEXGRAPH_BASE_PATH = Path("/data/faliwang/GTools")
+COMPLEXGRAPH_BASE_PATH = Path("/data/faliwang/ComplexGraph")
 
 
 def load_json(path: Path) -> Dict[str, Any]:
