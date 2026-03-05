@@ -61,7 +61,7 @@ from utils.dataset_config import get_dataset_config
 
 # Retrieval agent utilities
 try:
-    from utils.retrieval.retrieval_agent import RetrievalAgent
+    from utils.retrieval_agent import retrieve_doc
     HAS_RETAGENT = True
 except ImportError:
     HAS_RETAGENT = False
@@ -101,19 +101,38 @@ def run_retagent_coding_experiment(
 
     # Initialize retrieval agent
     try:
-        retrieval_agent = RetrievalAgent(model_name=model_name)
+        docs_repo_path = config.get("docs_repo", "data/networkx_graph_functions_docs.json")
+        llm_generator = create_code_generator(model_name)
+
+        class RetrievalAgent:
+            """Compatibility adapter around retrieve_doc()."""
+
+            def __init__(self, llm_model, doc_path: str):
+                self.llm_model = llm_model
+                self.doc_path = doc_path
+
+            def retrieve(self, query: str, top_k: int = 3):
+                docs = retrieve_doc(
+                    doc_path=self.doc_path,
+                    user_query=query,
+                    llm_model=self.llm_model,
+                    top_k=top_k,
+                    max_rounds=3,
+                )
+                if docs is None:
+                    return []
+                if isinstance(docs, str):
+                    return [docs]
+                return docs
+
+        retrieval_agent = RetrievalAgent(llm_model=llm_generator, doc_path=docs_repo_path)
         print(f"✓ Retrieval agent initialized\n")
     except Exception as e:
         print(f"✗ Error initializing retrieval agent: {e}")
         return
 
     # Initialize LLM
-    try:
-        llm_generator = create_code_generator(model_name)
-        print(f"✓ LLM generator initialized: {model_name}\n")
-    except Exception as e:
-        print(f"✗ Error initializing LLM: {e}")
-        return
+    print(f"✓ LLM generator initialized: {model_name}\n")
 
     # Load dataset
     try:

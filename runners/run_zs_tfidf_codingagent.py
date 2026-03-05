@@ -61,7 +61,7 @@ from utils.dataset_config import get_dataset_config
 
 # TF-IDF retrieval
 try:
-    from utils.retrieval.tfidf_retriever import TFIDFRetriever
+    from utils.tfidf_retrieval import find_best_docstring
     HAS_TFIDF = True
 except ImportError:
     HAS_TFIDF = False
@@ -99,13 +99,8 @@ def run_tfidf_coding_experiment(
         print("✗ TF-IDF retriever not available")
         return
 
-    # Initialize retriever
-    try:
-        retriever = TFIDFRetriever()
-        print(f"✓ TF-IDF retriever initialized\n")
-    except Exception as e:
-        print(f"✗ Error initializing retriever: {e}")
-        return
+    docs_repo_path = config.get("docs_repo", "data/networkx_graph_functions_docs.json")
+    print(f"✓ TF-IDF retriever ready (docs: {docs_repo_path})\n")
 
     # Initialize LLM
     try:
@@ -148,8 +143,8 @@ def run_tfidf_coding_experiment(
 
         question_text = question_group.get('question', '')
 
-        # Retrieve relevant documentation
-        retrieved_docs = retriever.retrieve(question_text, top_k=3)
+        # Retrieve relevant documentation via TF-IDF
+        retrieved_docs = find_best_docstring(docs_repo_path, question_text, top_k=3)
         if not retrieved_docs:
             retrieved_docs = ["No documentation retrieved"]
 

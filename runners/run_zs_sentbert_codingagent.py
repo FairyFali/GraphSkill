@@ -61,7 +61,7 @@ from utils.dataset_config import get_dataset_config
 
 # Sentence-BERT retrieval
 try:
-    from utils.retrieval.sentbert_retriever import SentenceBertRetriever
+    from utils.sentbert_retrieval import find_best_docstring
     HAS_SENTBERT = True
 except ImportError:
     HAS_SENTBERT = False
@@ -101,7 +101,22 @@ def run_sentbert_coding_experiment(
 
     # Initialize retriever
     try:
-        retriever = SentenceBertRetriever()
+        docs_repo_path = config.get("docs_repo", "data/networkx_graph_functions_docs.json")
+
+        class SentenceBertRetriever:
+            """Compatibility adapter around find_best_docstring()."""
+
+            def __init__(self, repo_json_path: str):
+                self.repo_json_path = repo_json_path
+
+            def retrieve(self, query_text: str, top_k: int = 3):
+                return find_best_docstring(
+                    repo_json_path=self.repo_json_path,
+                    query_text=query_text,
+                    top_k=top_k,
+                )
+
+        retriever = SentenceBertRetriever(repo_json_path=docs_repo_path)
         print(f"✓ Sentence-BERT retriever initialized\n")
     except Exception as e:
         print(f"✗ Error initializing retriever: {e}")
