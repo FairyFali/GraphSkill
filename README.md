@@ -114,6 +114,19 @@ The repo contains several baselines under `runners/`, including:
 - Keep `.env` local and never commit secrets.
 - Large datasets can require longer runtime due to code execution and evaluation.
 
+## 📃 Citation
+```
+@misc{wang2026graphskill,
+      title={GraphSkill: Documentation-Guided Hierarchical Retrieval-Augmented Coding for Complex Graph Reasoning}, 
+      author={Fali Wang and Chenglin Weng and Xianren Zhang and Siyuan Hong and Hui Liu and Suhang Wang},
+      year={2026},
+      eprint={2603.06620},
+      archivePrefix={arXiv},
+      primaryClass={cs.SE},
+      url={https://arxiv.org/abs/2603.06620}, 
+}
+```
+
 ## License
 
 This project is distributed under the terms in `LICENSE`.
