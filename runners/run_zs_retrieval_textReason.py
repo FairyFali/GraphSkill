@@ -20,7 +20,6 @@ Example Usage:
 
 Dependencies:
     - LLM API keys configured in .env file
-    - ComplexGraph dataset in /data/faliwang/ComplexGraph/{small,large,composite}/
     - Retrieval ground truth: data/retrieval_groundtruth.json
 """
 
